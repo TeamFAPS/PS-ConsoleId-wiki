@@ -1,0 +1,126 @@
+typedef struct PsCode {
+	char magic[2]; // {0, 1}
+	char target_id[2];
+	char target_id;
+	char model_revision[2];
+	uint16_t chassis;
+} PsCode;
+
+typedef struct ConsoleId {
+	char magic[4]; // {0, 0, 0, 1}
+	char target_id[2];
+	char model_revision[2];
+	char chassis_check;
+	char unknown[7];
+} ConsoleId;
+
+char pscode_magic[4] = {0, 1};
+char consoleid_magic[4] = {0, 0, 0, 1};
+
+/* PSVita TARGET ID spoofing in PSCode results
+ *00 -- IsTest, no red message, no expiration date
+ *01 -- IsTool, battery backup has failed red message, activated 32000+ days
+ *02 -- IsDEX, expiration red message, expired date
+ *03 -- health warning
+ *04 -- same as 3
+ *05 -- Retail PSP / PSVita
+ *06 -- same as 3
+ *07 -- same as 5
+ *08 -- same as 3
+ *09 -- same as 5
+ *10+ -- chinese shit, C1-13819-2
+*/
+
+/* TARGET ID
+PSP TARGET IDs
+0x00 // TEST Prototype / Test unit
+0x01 // TOOL Devkit / Tool unit
+0x02 // DEX Testkit / DEX unit
+0x03 // CEX Japan
+0x04 // CEX North America
+0x05 // CEX Europe/East/Africa
+0x06 // CEX Korea
+0x07 // CEX Great Britain/United Kingdom // PCH-xx03 VTE-1016 
+0x08 // CEX Mexico/Latin America
+0x09 // CEX Australia/New Zeland
+0x0A // CEX Hong Kong/Singapore
+0x0B // CEX Taiwan
+0x0C // CEX Russia
+0x0D // CEX China
+
+PS3 TARGET IDs
+0x80 // TEST - AVTest / DECHS (TEST)
+0x81 // TOOL - SD System Debugger / DECR Reference Tool / DECR (TOOL)
+0x82 // DEX - Debug / DECH (DEX)
+0x83 // CEX - Retail or Shop Kiosk - Japan (J1)
+0x84 // CEX - Retail or Shop Kiosk - USA (UC2)
+0x85 // CEX - Retail or Shop Kiosk - Europe (CEL)
+0x86 // CEX - Retail or Shop Kiosk - Korea (KR2)
+0x87 // CEX - Retail or Shop Kiosk - United Kingdom (CEK)
+0x88 // CEX - Retail or Shop Kiosk - Mexico (MX2)
+0x89 // CEX - Retail or Shop Kiosk - Australia/New Zealand (AU3)
+0x8A // CEX - Retail or Shop Kiosk - South Asia (E12)
+0x8B // CEX - Retail or Shop Kiosk - Taiwan (TW1)
+0x8C // CEX - Retail or Shop Kiosk - Russia (RU3)
+0x8D // CEX - Retail or Shop Kiosk - China (never released) (CN9)
+0x8E // CEX - Retail or Shop Kiosk - Hong Kong (HK5)
+0x8F // CEX - Retail or Shop Kiosk - Brazil (BR2)
+0xA0 // ARC - Arcade
+
+PSVita TARGET IDs
+0x100 // TEST Prototype / Test unit
+0x101 // TOOL Devkit / Tool unit
+0x102 // DEX Testkit / DEX unit
+0x103 // CEX Japan
+0x104 // CEX North America
+0x105 // CEX Europe/East/Africa
+0x106 // CEX Korea
+0x107 // CEX Great Britain/United Kingdom // PCH-xx03 VTE-1016 
+0x108 // CEX Mexico/Latin America
+0x109 // CEX Australia/New Zeland
+0x10A // CEX Hong Kong/Singapore
+0x10B // CEX Taiwan
+0x10C // CEX Russia
+0x10D // CEX China
+*/
+
+/* PSP Model revision
+0x01 // TA-079/081 (PSP-10XX)
+0x02 // TA-082/086 (PSP-10XX)
+0x03 // TA-085/088 (PSP-20XX)
+0x04 // TA-090/092 (PSP-30XX)
+0x05 // TA-091 (PSP-N10XX)
+0x06 // TA-093 (PSP-30XX)
+0x07 // unknown (PSP-30XX)
+0x08 // TA-095 (PSP-30XX)
+0x09 // TA-096/097 (PSP-E10XX)
+
+PSVita Model revision
+0x10 // FAT - IRS-002 (PCH-10XX / PCH-11XX / PTEL-10XX) or IRT-002 (PDEL-10XX)
+0x14 // SLIM - USS-1001 (PCH-20XX / PTEL-20XX)
+0x201 // PSTV - DOL-1001 (VTE-10XX)
+
+PS3 Model revision
+0x01 // COK-001
+0x02 // COK-001
+0x03 // COK-002
+0x04 // COK-002 or COK-002W
+0x05 // SEM-001
+0x06 // DIA-001
+0x07 // DIA-002
+0x08 // VER-001
+0x09 // DYN-001
+0x0A // SUR-001
+0x0B // JTP-001 or JSD-001
+0x0C // KTE-001
+0x0D // MPX-001 or MSX-001 or NPX-001
+0x0E // ?PQX-001?
+0x13 // unknown
+*/
+
+/* Chassis Check
+0x04 >> 2 = 1
+0x0C >> 2 = 3
+0x10 >> 2 = 4
+0x14 >> 2 = 5
+*/
