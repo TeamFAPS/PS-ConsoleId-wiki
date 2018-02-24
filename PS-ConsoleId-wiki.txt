@@ -1,9 +1,8 @@
 typedef struct PsCode {
 	char magic[2]; // {0, 1}
 	char target_id[2];
-	char target_id;
 	char model_revision[2];
-	uint16_t chassis;
+	uint16_t chassis; // chassis = chassis_check >> 2;
 } PsCode;
 
 typedef struct ConsoleId {
@@ -17,18 +16,18 @@ typedef struct ConsoleId {
 char pscode_magic[4] = {0, 1};
 char consoleid_magic[4] = {0, 0, 0, 1};
 
-/* PSVita TARGET ID spoofing in PSCode results
+/* TARGET ID in PSCode spoofing on Retail PSVita results
  *00 -- IsTest, no red message, no expiration date
  *01 -- IsTool, battery backup has failed red message, activated 32000+ days
  *02 -- IsDEX, expiration red message, expired date
- *03 -- health warning
- *04 -- same as 3
- *05 -- Retail PSP / PSVita
- *06 -- same as 3
- *07 -- same as 5
- *08 -- same as 3
- *09 -- same as 5
- *10+ -- chinese shit, C1-13819-2
+ *03 -- Health warning on boot
+ *04 -- Health warning on boot
+ *05 -- Epilepsy warning on boot
+ *06 -- Health warning on boot
+ *07 -- Epilepsy warning on boot
+ *08 -- Health warning on boot
+ *09 -- Epilepsy warning on boot
+ *10+ -- chinese message (error C1-13819-2)
 */
 
 /* TARGET ID
@@ -119,8 +118,10 @@ PS3 Model revision
 */
 
 /* Chassis Check
+0x03 >> 2 = 0
 0x04 >> 2 = 1
 0x0C >> 2 = 3
 0x10 >> 2 = 4
 0x14 >> 2 = 5
+0xF4 >> 2 = 61
 */
