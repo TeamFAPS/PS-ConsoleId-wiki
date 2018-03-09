@@ -31,6 +31,19 @@ char consoleid_magic[4] = {0, 0, 0, 1};
 */
 
 /* TARGET ID (internally named Product Code)
+
+Quick determination :
+00  0X = PSP
+00  8X = PS3
+01  0X = PSV
+01  8X = PS4
+
+XX  X0 = TEST
+XX  X1 = TOOL
+XX  X2 = DEX
+XX  X3 or bigger = CEX
+
+
 PSP TARGET IDs
 0x00 // TEST Prototype / Test unit
 0x01 // TOOL Devkit / Tool unit
