@@ -16,7 +16,7 @@ typedef struct ConsoleId {
 char pscode_magic[4] = {0, 1};
 char consoleid_magic[4] = {0, 0, 0, 1};
 
-/* TARGET ID in PSCode spoofing on Retail PSVita results
+/* TARGET ID in PsCode spoofing on Retail PSVita results
  *00 -- IsTest, no red message, no expiration date
  *01 -- IsTool, battery backup has failed red message, activated 32000+ days
  *02 -- IsDEX, expiration red message, expired date
@@ -30,7 +30,7 @@ char consoleid_magic[4] = {0, 0, 0, 1};
  *10+ -- chinese message (error C1-13819-2)
 */
 
-/* TARGET ID
+/* TARGET ID (internally named Product Code)
 PSP TARGET IDs
 0x00 // TEST Prototype / Test unit
 0x01 // TOOL Devkit / Tool unit
@@ -39,7 +39,7 @@ PSP TARGET IDs
 0x04 // CEX North America
 0x05 // CEX Europe/East/Africa
 0x06 // CEX Korea
-0x07 // CEX Great Britain/United Kingdom // PCH-xx03 VTE-1016 
+0x07 // CEX Great Britain/United Kingdom
 0x08 // CEX Mexico/Latin America
 0x09 // CEX Australia/New Zeland
 0x0A // CEX Hong Kong/Singapore
@@ -72,7 +72,7 @@ PSVita TARGET IDs
 0x102 // DEX Testkit / DEX unit
 0x103 // CEX Japan
 0x104 // CEX North America
-0x105 // CEX Europe/East/Africa
+0x105 // CEX Europe/East/Africa // PCH-xx04
 0x106 // CEX Korea
 0x107 // CEX Great Britain/United Kingdom // PCH-xx03 VTE-1016 
 0x108 // CEX Mexico/Latin America
@@ -81,9 +81,29 @@ PSVita TARGET IDs
 0x10B // CEX Taiwan
 0x10C // CEX Russia
 0x10D // CEX China
+
+PS4 TARGET IDs
+0x180 TEST Diag
+0x181 TOOL DevKit
+0x0182 DEX TestKit
+0x183 // CEX Retail JAPAN
+0x184 // CEX Retail USA
+0x185 // CEX Retail EUROPE
+0x186 // CEX Retail KOREA
+0x187 // CEX Retail UK
+0x188 // CEX Retail MEXICO
+0x189 // CEX Retail AUSTRALIA
+0x18A // CEX Retail SOUTH ASIA
+0x18B // CEX Retail TAIWAN
+0x18C // CEX Retail RUSSIA
+0x18D // CEX Retail CHINA
+0x18E // CEX Retail HK
+0x18F // CEX Retail BRAZIL
+0x190 // CEX Retail ?region?
+0x191 // CEX Retail ?region?
 */
 
-/* PSP Model revision
+/* PSP Model revision (internally named Product Sub Code)
 0x01 // TA-079/081 (PSP-10XX)
 0x02 // TA-082/086 (PSP-10XX)
 0x03 // TA-085/088 (PSP-20XX)
@@ -115,6 +135,9 @@ PS3 Model revision
 0x0D // MPX-001 or MSX-001 or NPX-001
 0x0E // ?PQX-001?
 0x13 // unknown
+
+PS4 Model revision
+unknow because no shared data
 */
 
 /* Chassis Check
