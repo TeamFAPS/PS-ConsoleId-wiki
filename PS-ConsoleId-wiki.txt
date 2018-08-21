@@ -1,14 +1,14 @@
 typedef struct PsCode {
 	char magic[2]; // {0, 1}
-	char target_id[2];
-	char model_revision[2];
+	char product_code[2];
+	char product_sub_code[2];
 	uint16_t chassis; // chassis = chassis_check >> 2;
 } PsCode;
 
 typedef struct ConsoleId {
 	char magic[4]; // {0, 0, 0, 1}
-	char target_id[2];
-	char model_revision[2];
+	char product_code[2];
+	char product_sub_code[2];
 	char chassis_check;
 	char unknown[7];
 } ConsoleId;
@@ -16,10 +16,10 @@ typedef struct ConsoleId {
 char pscode_magic[4] = {0, 1};
 char consoleid_magic[4] = {0, 0, 0, 1};
 
-/* TARGET ID in PsCode spoofing on Retail PSVita results
+/* Product Code in PsCode spoofing on Retail PSVita results
  *00 -- IsTest, no red message, no expiration date
- *01 -- IsTool, battery backup has failed red message, activated 32000+ days
- *02 -- IsDEX, expiration red message, expired date
+ *01 -- IsTestOrTool, battery backup has failed red message, activated 32000+ days
+ *02 -- IsNonCEX, expiration red message, expired date
  *03 -- Health warning on boot
  *04 -- Health warning on boot
  *05 -- Epilepsy warning on boot
@@ -30,7 +30,7 @@ char consoleid_magic[4] = {0, 0, 0, 1};
  *10+ -- chinese message (error C1-13819-2)
 */
 
-/* TARGET ID (internally named Product Code)
+/* Product Code (wrongly called Target Id)
 
 Quick determination :
 00  0X = PSP
@@ -44,7 +44,7 @@ XX  X2 = DEX
 XX  X3 or bigger = CEX
 
 
-PSP TARGET IDs
+PSP Product Code
 0x00 // TEST Prototype / Test unit
 0x01 // TOOL Devkit / Tool unit
 0x02 // DEX Testkit / DEX unit
@@ -60,7 +60,7 @@ PSP TARGET IDs
 0x0C // CEX Russia
 0x0D // CEX China
 
-PS3 TARGET IDs
+PS3 Product Code
 0x80 // TEST - AVTest / DECHS (TEST)
 0x81 // TOOL - SD System Debugger / DECR Reference Tool / DECR (TOOL)
 0x82 // DEX - Debug / DECH (DEX)
@@ -79,7 +79,7 @@ PS3 TARGET IDs
 0x8F // CEX - Retail or Shop Kiosk - Brazil (BR2)
 0xA0 // ARC - Arcade
 
-PSVita TARGET IDs
+PSVita Product Code
 0x100 // TEST Prototype / Test unit
 0x101 // TOOL Devkit / Tool unit
 0x102 // DEX Testkit / DEX unit
@@ -95,10 +95,10 @@ PSVita TARGET IDs
 0x10C // CEX Russia
 0x10D // CEX China
 
-PS4 TARGET IDs
+PS4 Product Code
 0x180 TEST Diag
 0x181 TOOL DevKit
-0x0182 DEX TestKit
+0x182 DEX TestKit
 0x183 // CEX Retail JAPAN
 0x184 // CEX Retail USA
 0x185 // CEX Retail EUROPE
@@ -116,7 +116,9 @@ PS4 TARGET IDs
 0x191 // CEX Retail ?region?
 */
 
-/* PSP Model revision (internally named Product Sub Code)
+/* Product Sub Code (Model revision)
+
+PSP Product Sub Code
 0x01 // TA-079/081 (PSP-10XX)
 0x02 // TA-082/086 (PSP-10XX)
 0x03 // TA-085/088 (PSP-20XX)
@@ -127,13 +129,7 @@ PS4 TARGET IDs
 0x08 // TA-095 (PSP-30XX)
 0x09 // TA-096/097 (PSP-E10XX)
 
-PSVita Model revision
-0x10 // FAT - IRS-002 (PCH-10XX / PCH-11XX / PTEL-10XX) or IRT-002 (PDEL-10XX)
-0x14 // SLIM - USS-1001 (PCH-20XX / PTEL-20XX)
-0x18 // SLIM year 2016 - unk (PCH-20XX)
-0x201 // PSTV - DOL-1001 (VTE-10XX)
-
-PS3 Model revision
+PS3 Product Sub Code
 0x01 // COK-001
 0x02 // COK-001
 0x03 // COK-002
@@ -150,7 +146,13 @@ PS3 Model revision
 0x0E // ?PQX-001?
 0x13 // unknown
 
-PS4 Model revision
+PSVita Product Sub Code
+0x10 // FAT - IRS-002 (PCH-10XX / PCH-11XX / PTEL-10XX) or IRT-002 (PDEL-10XX)
+0x14 // SLIM - USS-1001 (PCH-20XX / PTEL-20XX)
+0x18 // SLIM year 2016 - unk (PCH-20XX)
+0x201 // PSTV - DOL-1001 (VTE-10XX)
+
+PS4 Product Sub Code
 unknow because no shared data
 */
 
