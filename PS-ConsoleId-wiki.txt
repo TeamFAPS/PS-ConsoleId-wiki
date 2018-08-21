@@ -41,7 +41,7 @@ Quick determination :
 XX  X0 = TEST
 XX  X1 = TOOL
 XX  X2 = DEX
-XX  X3 or bigger = CEX
+XX  X3 or higher = CEX (specific to console selling region)
 
 
 PSP Product Code
@@ -96,9 +96,9 @@ PSVita Product Code
 0x10D // CEX China
 
 PS4 Product Code
-0x180 TEST Diag
-0x181 TOOL DevKit
-0x182 DEX TestKit
+0x180 // TEST Diag
+0x181 // TOOL DevKit
+0x182 // DEX TestKit
 0x183 // CEX Retail JAPAN
 0x184 // CEX Retail USA
 0x185 // CEX Retail EUROPE
