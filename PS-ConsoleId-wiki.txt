@@ -46,8 +46,8 @@ XX  X3 or higher = CEX (specific to console selling region)
 
 PSP Product Code
 0x00 // TEST Prototype / Test unit
-0x01 // TOOL Devkit / Tool unit
-0x02 // DEX Testkit / DEX unit
+0x01 // TOOL DevKit / Tool unit
+0x02 // DEX TestKit / DEX unit
 0x03 // CEX Japan
 0x04 // CEX North America
 0x05 // CEX Europe/East/Africa
@@ -59,6 +59,7 @@ PSP Product Code
 0x0B // CEX Taiwan
 0x0C // CEX Russia
 0x0D // CEX China
+0x0D // AVTOOL - DTP-L1500
 
 PS3 Product Code
 0x80 // TEST - AVTest / DECHS (TEST)
@@ -81,8 +82,8 @@ PS3 Product Code
 
 PSVita Product Code
 0x100 // TEST Prototype / Test unit
-0x101 // TOOL Devkit / Tool unit
-0x102 // DEX Testkit / DEX unit
+0x101 // TOOL Devkit / Tool unit - PDEL / DEM
+0x102 // DEX Testkit / DEX unit - PTEL
 0x103 // CEX Japan
 0x104 // CEX North America
 0x105 // CEX Europe/East/Africa // PCH-xx04
@@ -119,7 +120,7 @@ PS4 Product Code
 /* Product Sub Code (Model revision)
 
 PSP Product Sub Code
-0x01 // TA-079/081 (PSP-10XX)
+0x01 // TA-079/081 (PSP-10XX) - TMU-002 (DTP-L1500 / DTP-H1500)
 0x02 // TA-082/086 (PSP-10XX)
 0x03 // TA-085/088 (PSP-20XX)
 0x04 // TA-090/092 (PSP-30XX)
@@ -157,7 +158,8 @@ PS4 Product Sub Code
 unknow because no shared data
 */
 
-/* Chassis Check
+/* Chassis Check <-> Chassis table
+chassis = chassis_check >> 2;
 0x03 >> 2 = 0
 0x04 >> 2 = 1
 0x0C >> 2 = 3
