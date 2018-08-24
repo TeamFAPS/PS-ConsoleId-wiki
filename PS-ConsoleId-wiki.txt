@@ -147,10 +147,11 @@ PS3 Product Sub Code
 0x13 // unknown
 
 PSVita Product Sub Code
-0x10 // FAT - IRS-002 (PCH-10XX / PCH-11XX / PTEL-10XX) or IRT-002 (PDEL-10XX)
+0x05 // Early DevKit - IRT-002 (DEM-3000H, CP board GCP-001)
+0x10 // FAT - IRS-002 (FAT Wifi PCH-10XX / FAT 3G PCH-11XX / TestKit PTEL-10XX) or IRT-002 (DevKit PDEL-10XX)
 0x14 // SLIM - USS-1001 (PCH-20XX / PTEL-20XX)
 0x18 // SLIM year 2016 - unk (PCH-20XX)
-0x201 // PSTV - DOL-1001 (VTE-10XX)
+0x201 // PS TV - DOL-1001 (VTE-10XX)
 
 PS4 Product Sub Code
 unknow because no shared data
