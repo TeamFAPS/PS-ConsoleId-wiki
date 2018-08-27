@@ -17,17 +17,23 @@ char pscode_magic[4] = {0, 1};
 char consoleid_magic[4] = {0, 0, 0, 1};
 
 /* Product Code in PsCode spoofing on Retail PSVita results
- *00 -- IsTest, no red message, no expiration date
- *01 -- IsTestOrTool, battery backup has failed red message, activated 32000+ days
- *02 -- IsNonCEX, expiration red message, expired date
- *03 -- Health warning on boot
- *04 -- Health warning on boot
- *05 -- Epilepsy warning on boot
- *06 -- Health warning on boot
- *07 -- Epilepsy warning on boot
- *08 -- Health warning on boot
- *09 -- Epilepsy warning on boot
- *10+ -- chinese message (error C1-13819-2)
+ * 100 -- IsTest, no red message, no expiration date
+ * 101 -- IsTestOrTool, battery backup has failed red message, activated 32000+ days
+ * 102 -- IsNonCEX, expiration red message, expired date
+ * 103 -- Health warning on boot
+ * 104 -- Health warning on boot
+ * 105 -- Epilepsy warning on boot
+ * 106 -- Health warning on boot
+ * 107 -- Epilepsy warning on boot
+ * 108 -- Health warning on boot
+ * 109 -- Epilepsy warning on boot
+ * 10A -- ??
+ * 10B -- ??
+ * 10C -- ??
+ * 10D -- ??
+ * 10E -- ??
+ * 10F -- ??
+ * 110+ -- chinese message (error C1-13819-2)
 */
 
 /* Product Code (wrongly called Target Id)
@@ -81,20 +87,20 @@ PS3 Product Code
 0xA0 // ARC - Arcade
 
 PSVita Product Code
-0x100 // TEST Prototype / Test unit
-0x101 // TOOL Devkit / Tool unit - PDEL / DEM
-0x102 // DEX Testkit / DEX unit - PTEL
-0x103 // CEX Japan
-0x104 // CEX North America
-0x105 // CEX Europe/East/Africa // PCH-xx04
-0x106 // CEX Korea
-0x107 // CEX Great Britain/United Kingdom // PCH-xx03 VTE-1016 
-0x108 // CEX Mexico/Latin America
-0x109 // CEX Australia/New Zeland
-0x10A // CEX Hong Kong/Singapore
-0x10B // CEX Taiwan
-0x10C // CEX Russia
-0x10D // CEX China
+0x100 // TEST - Prototype / Test unit
+0x101 // TOOL - DevKit / Tool unit - PDEL / DEM
+0x102 // DEX - TestKit / DEX unit - PTEL
+0x103 // CEX - Retail - J1 - Japan
+0x104 // CEX - Retail - UC2 - North America
+0x105 // CEX - Retail - CEL - Europe/East/Africa // PCH-xx04
+0x106 // CEX - Retail - KR2 - Korea
+0x107 // CEX - Retail - CEK - Great Britain/United Kingdom // PCH-xx03 VTE-1016
+0x108 // CEX - Retail - MX2 - Mexico/Latin America
+0x109 // CEX - Retail - AU3 - Australia/New Zeland
+0x10A // CEX - Retail - Hong Kong/Singapore
+0x10B // CEX - Retail - TW1 - Taiwan
+0x10C // CEX - Retail - RU3 - Russia
+0x10D // CEX - Retail - CN9 - China
 
 PS4 Product Code
 0x180 // TEST Diag
