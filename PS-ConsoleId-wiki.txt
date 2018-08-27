@@ -33,7 +33,7 @@ char consoleid_magic[4] = {0, 0, 0, 1};
  * 10D -- ??
  * 10E -- ??
  * 10F -- ??
- * 110+ -- chinese message (error C1-13819-2)
+ * 110+ -- error message in japanese (error C1-13819-2) certainly related to RegistryMgr
 */
 
 /* Product Code (wrongly called Target Id)
