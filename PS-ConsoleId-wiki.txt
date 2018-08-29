@@ -107,7 +107,7 @@ PS4 Product Code
 0x181 // TOOL DevKit
 0x182 // DEX TestKit
 0x183 // CEX Retail JAPAN
-0x184 // CEX Retail USA
+0x184 // CEX Retail USA - CUH-xx15
 0x185 // CEX Retail EUROPE
 0x186 // CEX Retail KOREA
 0x187 // CEX Retail UK - CUH-xx16
@@ -139,18 +139,18 @@ PSP Product Sub Code
 PS3 Product Sub Code
 0x01 // COK-001
 0x02 // COK-001
-0x03 // COK-002
-0x04 // COK-002 or COK-002W
-0x05 // SEM-001
-0x06 // DIA-001
-0x07 // DIA-002
-0x08 // VER-001
-0x09 // DYN-001
-0x0A // SUR-001
-0x0B // JTP-001 or JSD-001
-0x0C // KTE-001
+0x03 // COK-002 - CECHAxx, CECHBxx
+0x04 // COK-002 (CECHCxx, CECHExx) or COK-002W (CECHExx)
+0x05 // SEM-001 - CECHGxx
+0x06 // DIA-001 - CECHHxx
+0x07 // DIA-002 - CECHJxx, CECHKxx
+0x08 // VER-001 - CECHLxx, CECHMxx, CECHPxx, CECHQxx
+0x09 // DYN-001 - CECH-20xx
+0x0A // SUR-001 - CECH-21xx
+0x0B // JTP-001 or JSD-001 - CECH-25xx
+0x0C // KTE-001 - CECH-30xx
 0x0D // MPX-001 or MSX-001 or NPX-001
-0x0E // ?PQX-001?
+0x0E // ?PPX-001? ?PQX-001? ?RTX-001? 
 0x13 // unknown
 
 PSVita Product Sub Code
