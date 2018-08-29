@@ -161,7 +161,7 @@ PSVita Product Sub Code
 0x201 // PS TV - DOL-1001 (VTE-10XX)
 
 PS4 Product Sub Code
-unknow because no shared data
+0x11 // FAT 11xx chassis 2 datecode 4D
 */
 
 /* Chassis Check <-> Chassis table
