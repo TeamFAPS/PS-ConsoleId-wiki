@@ -149,8 +149,8 @@ PS3 Product Sub Code
 0x0A // SUR-001 - CECH-21xx
 0x0B // JTP-001 or JSD-001 - CECH-25xx
 0x0C // KTE-001 - CECH-30xx
-0x0D // MPX-001 or MSX-001 or NPX-001
-0x0E // ?PPX-001? ?PQX-001? ?RTX-001? 
+0x0D // MPX-001 or MSX-001 or NPX-001 - CECH-40xx
+0x0E // ?PPX-001? ?PQX-001? ?RTX-001? - ?CECH-42xx?
 0x13 // unknown
 
 PSVita Product Sub Code
