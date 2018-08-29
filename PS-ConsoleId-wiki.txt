@@ -110,9 +110,9 @@ PS4 Product Code
 0x184 // CEX Retail USA
 0x185 // CEX Retail EUROPE
 0x186 // CEX Retail KOREA
-0x187 // CEX Retail UK
+0x187 // CEX Retail UK - CUH-xx16
 0x188 // CEX Retail MEXICO
-0x189 // CEX Retail AUSTRALIA
+0x189 // CEX Retail AUSTRALIA - CUH-xx02
 0x18A // CEX Retail SOUTH ASIA
 0x18B // CEX Retail TAIWAN
 0x18C // CEX Retail RUSSIA
@@ -161,7 +161,13 @@ PSVita Product Sub Code
 0x201 // PS TV - DOL-1001 (VTE-10XX)
 
 PS4 Product Sub Code
+unk // FAT 10xx chassis 1
 0x11 // FAT 11xx chassis 2 datecode 4D
+0x12 // FAT 12xx chassis 3
+0x13 // SLIM 20xx chassis 1
+unk // PRO 70xx chassis 1
+unk // SLIM 21xx chassis 2
+unk // PRO 71xx chassis 2
 */
 
 /* Chassis Check <-> Chassis table
