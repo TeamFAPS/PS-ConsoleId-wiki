@@ -164,7 +164,7 @@ PS4 Product Sub Code
 0x10 // SAA-001 - FAT 10xx chassis A
 0x11 // SAB-001 - FAT 11xx chassis B
 0x12 // SAC-001 - FAT 12xx chassis C
-0x13 // SAD-001 / SAD-002 - SLIM 20xx chassis D
+0x13 // SAD-001 / SAD-002 / SAD-003 - SLIM 20xx chassis D
 0x211 // NVA-001 - PRO 70xx chassis A (seen on shipped on 3.70-4.70)
 unk // SAE-001 / SAE-003 - SLIM 21xx chassis E
 unk // NVB-003 / NVB-004 - PRO 71xx chassis B
