@@ -165,7 +165,7 @@ unk // FAT 10xx chassis 1
 0x11 // FAT 11xx chassis 2 datecode 4D
 0x12 // FAT 12xx chassis 3
 0x13 // SLIM 20xx chassis 1
-unk // PRO 70xx chassis 1
+0x211 // PRO 70xx chassis 1
 unk // SLIM 21xx chassis 2
 unk // PRO 71xx chassis 2
 */
