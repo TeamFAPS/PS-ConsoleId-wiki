@@ -161,12 +161,12 @@ PSVita Product Sub Code
 0x201 // PS TV - DOL-1001 (VTE-10XX)
 
 PS4 Product Sub Code
-unk // FAT 10xx chassis 1
-0x11 // FAT 11xx chassis 2 datecode 4D
-0x12 // FAT 12xx chassis 3
-0x13 // SLIM 20xx chassis 1
-0x211 // PRO 70xx chassis 1
-unk // SLIM 21xx chassis 2
+0x10 // FAT 10xx chassis A
+0x11 // FAT 11xx chassis B
+0x12 // FAT 12xx chassis C
+0x13 // SLIM 20xx chassis D
+0x211 // PRO 70xx chassis 1 (shipped on 4.70)
+unk // SLIM 21xx chassis E
 unk // PRO 71xx chassis 2
 */
 
