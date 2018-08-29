@@ -65,7 +65,7 @@ PSP Product Code
 0x0B // CEX Taiwan
 0x0C // CEX Russia
 0x0D // CEX China
-0x0D // AVTOOL - DTP-L1500
+0x0E // AVTOOL - DTP-L1500
 
 PS3 Product Code
 0x80 // TEST - AVTest / DECHS (TEST)
