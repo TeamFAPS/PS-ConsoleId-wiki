@@ -103,7 +103,7 @@ PSVita Product Code
 0x10D // CEX - Retail - CN9 - China
 
 PS4 Product Code
-0x180 // TEST Diag
+0x180 // TEST Diag (chassis check must be 0x90, 0x91, 0x92 or 0x93)
 0x181 // TOOL DevKit
 0x182 // DEX TestKit
 0x183 // CEX Retail JAPAN
@@ -177,5 +177,6 @@ chassis = chassis_check >> 2;
 0x0C >> 2 = 3
 0x10 >> 2 = 4
 0x14 >> 2 = 5
+0x90-0x93 >> 2 = 36
 0xF4 >> 2 = 61
 */
