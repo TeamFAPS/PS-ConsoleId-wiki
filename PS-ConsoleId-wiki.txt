@@ -161,7 +161,7 @@ PSVita Product Sub Code
 0x201 // PS TV - DOL-1001 (VTE-10XX)
 
 PS4 Product Sub Code
-0x10 // SAA-001 - FAT chassis A - Retail CUH-10xx - TestKit DUH-T1000AA - DevKit DUH-D1000AA (CVN-001)
+0x10 // SAA-001 - FAT chassis A - Retail CUH-10xx - TestKit DUH-T1000AA - DevKit DUH-D1000AA (?CVN-001, CVN-K12?)
 0x11 // SAB-001 - FAT chassis B - Retail CUH-11xx
 0x12 // SAC-001 - FAT chassis C - Retail CUH-12xx
 0x13 // SAD-001 / SAD-002 / SAD-003 - SLIM chassis D - Retail CUH-20xx 
