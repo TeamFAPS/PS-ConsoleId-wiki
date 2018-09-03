@@ -70,7 +70,7 @@ PSP Product Code
 PS3 Product Code
 0x80 // TEST - AVTest / DECHS (TEST)
 0x81 // TOOL - SD System Debugger / DECR Reference Tool / DECR (TOOL)
-0x82 // DEX - Debug / DECH (DEX)
+0x82 // DEX - Debug / DECH (DEX) - DECH-XXXX - DEH-FH1500J-A from mid April 2008
 0x83 // CEX - Retail or Shop Kiosk - Japan (J1)
 0x84 // CEX - Retail or Shop Kiosk - USA (UC2)
 0x85 // CEX - Retail or Shop Kiosk - Europe (CEL)
@@ -137,14 +137,14 @@ PSP Product Sub Code
 0x09 // TA-096/097 (PSP-E10XX)
 
 PS3 Product Sub Code
-0x01 // COK-001
-0x02 // COK-001
-0x03 // COK-002 - CECHAxx, CECHBxx
-0x04 // COK-002 (CECHCxx, CECHExx) or COK-002W (CECHExx)
+0x01 // DECR-1000(A/J), DEH-Z1010 (TMU-520) - DECHSA00A/J, CECHA (COK-001)
+0x02 // COK-001 - CECHBxx
+0x03 // COK-002 - CECHCxx
+0x04 // COK-002 or COK-002W - CECHExx - GECR-1100 (COK-002)
 0x05 // SEM-001 - CECHGxx
 0x06 // DIA-001 - CECHHxx
 0x07 // DIA-002 - CECHJxx, CECHKxx
-0x08 // VER-001 - CECHLxx, CECHMxx, CECHPxx, CECHQxx
+0x08 // VER-001 - CECHLxx, CECHMxx, CECHPxx, CECHQxx, GECR-1500 - VERTIGO-02 in DEH-FH1500J-A from mid April 2008
 0x09 // DYN-001 - CECH-20xx
 0x0A // SUR-001 - CECH-21xx
 0x0B // JTP-001 or JSD-001 - CECH-25xx
