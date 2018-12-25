@@ -103,14 +103,7 @@ PSVita Product Code
 0x10D // CEX - Retail - CN9 - China
 
 PSVita Region Code for CEX PCH-XXxx (CEX):
-00 = Japan
-01, 10 = North America
-02 = Australia/New Zeland
-03 = Great Britain/United Kingdom
-04 = Europe/East/Africa
-05 = Korea
-06, 07, 09 = sa
-08 = Russia
+See https://playstationdev.wiki/psvitadevwiki/index.php?title=SKU_Models#Region_Code.
 
 PS4 Product Code
 0x180 // TEST Diag (chassis check must be 0x90, 0x91, 0x92 or 0x93)
