@@ -159,7 +159,7 @@ PS3 Product Sub Code
 PSVita Product Sub Code
 0x05 // Early DevKit - IRT-001 (DEM-3000H, CP board GCP-001)
 0x0B // Prototype DevKit (DEM-3000L)
-0x10 // FAT - IRS-002 (FAT Wifi PCH-10XX / FAT 3G PCH-11XX / TestKit PTEL-10XX) or IRT-002 (DevKit PDEL-10XX)
+0x10 // FAT - IRS-002 (FAT Wifi PCH-10XX / FAT 3G PCH-11XX / TestKit PTEL-10XX) or IRT-002 (DevKit PDEL-10XX, CP board GCP-002)
 0x14 // SLIM - USS-1001 (PCH-20XX / PTEL-20XX)
 0x18 // SLIM year 2016 - unk (PCH-20XX)
 0x201 // PS TV - DOL-1001 (VTE-10XX)
