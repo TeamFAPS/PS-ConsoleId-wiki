@@ -27,9 +27,9 @@ char consoleid_magic[4] = {0, 0, 0, 1};
  * 107 -- Epilepsy warning on boot
  * 108 -- Health warning on boot
  * 109 -- Epilepsy warning on boot
- * 10A -- ??
+ * 10A -- Health warning on boot // checked on PCH-2006
  * 10B -- ??
- * 10C -- ??
+ * 10C -- Epilepsy warning on boot // checked on PCH-1008 and PCH-1108
  * 10D -- ??
  * 10E -- ??
  * 10F -- ??
