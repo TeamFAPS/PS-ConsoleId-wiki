@@ -1,15 +1,16 @@
 typedef struct PsCode {
-	char magic[2]; // {0, 1}
-	char product_code[2];
-	char product_sub_code[2];
-	uint16_t chassis; // chassis = chassis_check >> 2;
+	uint16_t company_code; // {0, 1}
+	uint16_t product_code;
+	uint16_t product_sub_code;
+	uint16_t factory_code; // = chassis_check >> 2;
 } PsCode;
 
 typedef struct ConsoleId {
-	char magic[4]; // {0, 0, 0, 1}
-	char product_code[2];
-	char product_sub_code[2];
-	char chassis_check;
+	uint16_t unk; // {0, 0}
+	uint16_t company_code; // {0, 1}
+	uint16_t product_code;
+	uint16_t product_sub_code;
+	uint8_t chassis_check;
 	char unknown[7];
 } ConsoleId;
 
