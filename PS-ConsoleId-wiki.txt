@@ -14,6 +14,7 @@ typedef struct ConsoleId {
 	char unknown[7];
 } ConsoleId;
 
+// "Magics" for easier memory dumps analysis usage
 char pscode_magic[4] = {0, 1};
 char consoleid_magic[4] = {0, 0, 0, 1};
 
