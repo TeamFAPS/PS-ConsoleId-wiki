@@ -95,11 +95,11 @@ PSVita Product Code
 0x103 // CEX - Retail - J1 - Japan
 0x104 // CEX - Retail - UC2 - North America
 0x105 // CEX - Retail - CEL - Europe/East/Africa // PCH-xx04
-0x106 // CEX - Retail - KR2 - Korea
+0x106 // CEX - Retail - KR2 - South Korea
 0x107 // CEX - Retail - CEK - Great Britain/United Kingdom // PCH-xx03 VTE-1016
 0x108 // CEX - Retail - MX2 - Mexico/Latin America
 0x109 // CEX - Retail - AU3 - Australia/New Zealand
-0x10A // CEX - Retail - E12 - Hong Kong/Singapore/Malaysia
+0x10A // CEX - Retail - E12 - Hong Kong/Macao/Singapore/Malaysia
 0x10B // CEX - Retail - TW1 - Taiwan
 0x10C // CEX - Retail - RU3 - Russia - added in ????
 0x10D // CEX - Retail - CN9 - China - added in 2015
