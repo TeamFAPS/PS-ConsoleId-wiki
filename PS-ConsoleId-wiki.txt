@@ -169,11 +169,11 @@ PSVita Product Sub Code
 0x0B // Prototype DevKit (DEM-3000L)
 0x0C // never seen on any device yet except in the OS
 0x0F // CEM-3000NP1
-0x10 // FAT - IRS-002 (FAT Wifi PCH-10XX / FAT 3G PCH-11XX / TestKit PTEL-10XX) or IRT-002 (DevKit PDEL-10XX, CP board GCP-002)
+0x10 // FAT - IRS-002 (FAT Wifi PCH-10XX / FAT 3G PCH-11XX / TestKit PTEL-10XX) or IRT-002 (DevKit PDEL-10XX, CP board GCP-002) - factory FW 1.00 or 1.03
 0x11 // FAT - IRS-1001 (FAT 3G PCH-11XX Japanese Blue min FW 1.81)
 0x14 // SLIM - USS-1001 (PCH-20XX / PTEL-20XX)
-0x18 // SLIM year 2016 - USS-1002 (PCH-20XX)
-0x201 // PS TV - DOL-1001 (VTE-10XX)
+0x18 // SLIM year 2016 - USS-1002 (PCH-20XX) - factory FW 3.51 or 3.65
+0x201 // PS TV - DOL-1001 (VTE-10XX) - factory FW ?2.60? for White and 3.20 or 3.30 for Black
 
 PS4 Product Sub Code
 0x10 // SAA-001 - FAT chassis A - Retail CUH-10xx - TestKit DUH-T1000AA - DevKit DUH-D1000AA (?CVN-001, CVN-K12?)
