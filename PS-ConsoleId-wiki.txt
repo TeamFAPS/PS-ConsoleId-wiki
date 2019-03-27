@@ -172,7 +172,7 @@ PSVita Product Sub Code
 0x10 // FAT - IRS-002 (FAT Wifi PCH-10XX / FAT 3G PCH-11XX / TestKit PTEL-10XX) or IRT-002 (DevKit PDEL-10XX, CP board GCP-002)
 0x11 // FAT - IRS-1001 (FAT 3G PCH-11XX Japanese Blue min FW 1.81)
 0x14 // SLIM - USS-1001 (PCH-20XX / PTEL-20XX)
-0x18 // SLIM year 2016 - unk (PCH-20XX)
+0x18 // SLIM year 2016 - USS-1002 (PCH-20XX)
 0x201 // PS TV - DOL-1001 (VTE-10XX)
 
 PS4 Product Sub Code
