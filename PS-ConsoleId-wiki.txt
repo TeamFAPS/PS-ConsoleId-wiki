@@ -164,7 +164,9 @@ PS3 Product Sub Code
 0x14 // CECH-43xxA
 
 PSVita Product Sub Code
+0x03 // never seen on any device yet except in the OS. Tool DVT1.
 0x05 // Early Prototype DevKit - IRT-001 (DEM-3000H, CP board GCP-001)
+0x09 // never seen on any device yet except in the OS
 0x0A // never seen on any device yet except in the OS
 0x0B // Prototype DevKit (DEM-3000L)
 0x0C // never seen on any device yet except in the OS
@@ -178,9 +180,9 @@ PSVita Product Sub Code
 
 PS4 Product Sub Code
 0x10 // SAA-001 - FAT chassis A - Retail CUH-10xx - TestKit DUH-T1000AA - DevKit DUH-D1000AA (?CVN-001, CVN-K12?)
-0x11 // SAB-001 - FAT chassis B - Retail CUH-11xx
-0x12 // SAC-001 - FAT chassis C - Retail CUH-12xx
-0x13 // SAD-001 / SAD-002 / SAD-003 - SLIM chassis D - Retail CUH-20xx 
+0x11 // SAB-001 - FAT chassis B - Retail CUH-11xx - TestKit DUH-T1100AA
+0x12 // SAC-001 - FAT chassis C - Retail CUH-12xx - TestKit DUH-T1200AA
+0x13 // SAD-001 / SAD-002 / SAD-003 - SLIM chassis D - Retail CUH-20xx
 0x14 // SAE-001 / SAE-002 / SAE-003 / SAE-004 - SLIM chassis E - Retail CUH-21xx
 0x211 // NVA-001 - PRO chassis A - Retail CUH-70xx (seen on shipped on 3.70-4.70)
 0x212 // NVB-003 / NVB-004 - PRO chassis B - Retail CUH-71xx
