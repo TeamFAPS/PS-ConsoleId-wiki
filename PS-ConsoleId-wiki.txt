@@ -154,14 +154,14 @@ PS3 Product Sub Code
 0x0A // SUR-001 - CECH-21xx
 0x0B // JTP-001 or JSD-001 - CECH-25xx
 0x0C // KTE-001 - CECH-30xx
-0x0D // MPX-001 or MSX-001 or NPX-001 - CECH-40xxB/C v1
-0x0E // ?PPX-001? ?PQX-001? ?RTX-001? - CECH-40xxA v1
-0x0F // CECH-40xxB/C v2
-0x10 // CECH-40xxA v2
-0x11 // CECH-42xxB/C
-0x12 // CECH-42xxA
-0x13 // CECH-43xxB/C
-0x14 // CECH-43xxA
+0x0D // ?MPX-001 or MSX-001 or NPX-001 - CECH-40xxB/C v1?
+0x0E // ?MPX-001 or MSX-001 or NPX-001 - CECH-40xxA v1?
+0x0F // ?PPX-001 - CECH-40xxB/C v2?
+0x10 // ?PPX-001 - CECH-40xxA v2?
+0x11 // ?PQX-001 - CECH-42xxB/C?
+0x12 // ?PQX-001 - CECH-42xxA?
+0x13 // ?RTX-001 - CECH-43xxB/C?
+0x14 // ?RTX-001 - CECH-43xxA?
 
 PSVita Product Sub Code
 0x03 // never seen on any device yet except in the OS. Tool DVT1.
