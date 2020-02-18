@@ -131,61 +131,61 @@ PS4 Product Code
 /* Product Sub Code (Model revision)
 
 PSP Product Sub Code
-0x01 // TA-079/081 (PSP-10XX) - TMU-002 (DTP-L1500 / DTP-H1500)
-0x02 // TA-082/086 (PSP-10XX)
-0x03 // TA-085/088 (PSP-20XX)
-0x04 // TA-090/092 (PSP-30XX)
-0x05 // TA-091 (PSP-N10XX)
-0x06 // TA-093 (PSP-30XX)
-0x07 // unknown (PSP-30XX)
-0x08 // TA-095 (PSP-30XX)
-0x09 // TA-096/097 (PSP-E10XX)
+0x01 // Motherboard TA-079 / TA-081 (PSP-10XX) min FW 1.00, Motherboard TMU-002 (DTP-L1500 / DTP-H1500)
+0x02 // Motherboard TA-082 / TA-086 (PSP-10XX) min FW 1.00
+0x03 // Motherboard TA-085 / TA-088 (PSP-20XX)
+0x04 // Motherboard TA-090 / TA-092 (PSP-30XX)
+0x05 // Motherboard TA-091 (PSP-N10XX)
+0x06 // Motherboard TA-093 (PSP-30XX)
+0x07 // Motherboard unknown (PSP-30XX)
+0x08 // Motherboard TA-095 (PSP-30XX)
+0x09 // Motherboard TA-096 / TA-097 (PSP-E10XX)
 
 PS3 Product Sub Code
-0x01 // DECR-1000(A/J), DEH-Z1010 (TMU-520) - DECHSA00A/J, CECHAxx (COK-001), all DEH/CBEH consoles until CECHAxx
-0x02 // COK-001 - CECHBxx
-0x03 // COK-002 - CECHCxx
-0x04 // COK-002 or COK-002W - CECHExx - GECR-1100 (COK-002)
-0x05 // SEM-001 - CECHGxx
-0x06 // DIA-001 - CECHHxx
-0x07 // DIA-002 - CECHJxx, CECHKxx
-0x08 // VER-001 - CECHLxx, CECHMxx, CECHPxx, CECHQxx, GECR-1500 - VERTIGO-02 in DEH-FH1500J-A from mid April 2008
-0x09 // DYN-001 - CECH-20xx, DECR-1400
-0x0A // SUR-001 - CECH-21xx
-0x0B // JTP-001 or JSD-001 - CECH-25xx
-0x0C // KTE-001 - CECH-30xx
-0x0D // ?MPX-001 or MSX-001 or NPX-001 - CECH-40xxB/C v1?
-0x0E // ?MPX-001 or MSX-001 or NPX-001 - CECH-40xxA v1?
-0x0F // ?PPX-001 - CECH-40xxB/C v2?
-0x10 // ?PPX-001 - CECH-40xxA v2?
-0x11 // ?PQX-001 - CECH-42xxB/C?
-0x12 // ?PQX-001 - CECH-42xxA?
-0x13 // ?RTX-001 - CECH-43xxB/C?
-0x14 // ?RTX-001 - CECH-43xxA?
+0x01 // Motherboard TMU-520 (DECR-1000(A/J), DEH-Z1010), Motherboard COK-001 (DECHSA00A/J, CECHAxx), all DEH/CBEH consoles until CECHAxx
+0x02 // Motherboard COK-001 - CECHBxx
+0x03 // Motherboard COK-002 - CECHCxx
+0x04 // Motherboard COK-002 or COK-002W - CECHExx, Motherboard COK-002 (GECR-1100)
+0x05 // Motherboard SEM-001 - CECHGxx
+0x06 // Motherboard DIA-001 - CECHHxx
+0x07 // Motherboard DIA-002 - CECHJxx, CECHKxx
+0x08 // Motherboard VER-001 - CECHLxx, CECHMxx, CECHPxx, CECHQxx, GECR-1500, Motherboard VERTIGO-02 in DEH-FH1500J-A from mid April 2008
+0x09 // Motherboard DYN-001 - CECH-20xx, DECR-1400
+0x0A // Motherboard SUR-001 - CECH-21xx
+0x0B // Motherboard JTP-001 or JSD-001 - CECH-25xx
+0x0C // Motherboard KTE-001 - CECH-30xx
+0x0D // ?Motherboard MPX-001 or MSX-001 or NPX-001 - CECH-40xxB/C v1?
+0x0E // ?Motherboard MPX-001 or MSX-001 or NPX-001 - CECH-40xxA v1?
+0x0F // ?Motherboard PPX-001 - CECH-40xxB/C v2?
+0x10 // ?Motherboard PPX-001 - CECH-40xxA v2?
+0x11 // ?Motherboard PQX-001 - CECH-42xxB/C?
+0x12 // ?Motherboard PQX-001 - CECH-42xxA?
+0x13 // ?Motherboard RTX-001 - CECH-43xxB/C?
+0x14 // ?Motherboard RTX-001 - CECH-43xxA?
 
 PSVita Product Sub Code
 0x03 // never seen on any device yet except in the OS. Tool DVT1.
-0x05 // Prototype DevKit - IRT-001 (DEM-3000H, CP board GCP-001)
+0x05 // Prototype DevKit - Motherboard IRT-001 (DEM-3000H, CP board GCP-001)
 0x09 // never seen on any device yet except in the OS
 0x0A // Prototype - CEM-3000VP1
 0x0B // Prototype DevKit (DEM-3000L)
 0x0C // never seen on any device yet except in the OS
 0x0F // Prototype - CEM-3000NP1
-0x10 // FAT - IRS-002 (FAT Wifi PCH-10XX / FAT 3G PCH-11XX / TestKit PTEL-10XX) or IRT-002 (DevKit PDEL-10XX, CP board GCP-002) - factory FW 1.00 or 1.03
-0x11 // FAT - IRS-1001 (FAT 3G PCH-11XX Japanese Blue min FW 1.81)
-0x12 // FAT - IRS-1001 (FAT Wifi PCH-10XX Japanese min FW 1.81)
-0x14 // SLIM - USS-1001 (PCH-20XX / PTEL-20XX)
-0x18 // SLIM year 2016 - USS-1002 (PCH-20XX) - factory FW 3.51 or 3.65
-0x201 // PS TV - DOL-1001 (VTE-10XX) - factory FW ?2.60? for White and 3.20 or 3.30 for Black
+0x10 // FAT - Motherboard IRS-002 (FAT Wifi PCH-10XX / FAT 3G PCH-11XX / TestKit PTEL-10XX) or Motherboard IRT-002 (DevKit PDEL-10XX, CP board GCP-002) - factory FW 1.00 or 1.03
+0x11 // FAT - Motherboard IRS-1001 (FAT 3G PCH-11XX Japanese Blue min FW 1.81)
+0x12 // FAT - Motherboard IRS-1001 (FAT Wifi PCH-10XX Japanese min FW 1.81)
+0x14 // SLIM - Motherboard USS-1001 (PCH-20XX / PTEL-20XX)
+0x18 // SLIM year 2016 - Motherboard USS-1002 (PCH-20XX) - factory FW 3.51 or 3.65
+0x201 // PS TV - Motherboard DOL-1001 (VTE-10XX) - factory FW 2.60 for White units and 3.20 or 3.30 for Black units
 
 PS4 Product Sub Code
-0x10 // SAA-001 - FAT chassis A - Retail CUH-10xx - TestKit DUH-T1000AA - DevKit DUH-D1000AA (?CVN-001, CVN-K12?)
-0x11 // SAB-001 - FAT chassis B - Retail CUH-11xx - TestKit DUH-T1100AA
-0x12 // SAC-001 - FAT chassis C - Retail CUH-12xx - TestKit DUH-T1200AA
-0x13 // SAD-001 / SAD-002 / SAD-003 - SLIM chassis D - Retail CUH-20xx
-0x14 // SAE-001 / SAE-002 / SAE-003 / SAE-004 - SLIM chassis E - Retail CUH-21xx
-0x211 // NVA-001 - PRO chassis A - Retail CUH-70xx (seen on shipped on 3.70-4.70)
-0x212 // NVB-003 / NVB-004 - PRO chassis B - Retail CUH-71xx
+0x10 // Motherboard SAA-001 - FAT chassis A - Retail CUH-10xx - TestKit DUH-T1000AA - DevKit DUH-D1000AA (?CVN-001, CVN-K12?)
+0x11 // Motherboard SAB-001 - FAT chassis B - Retail CUH-11xx - TestKit DUH-T1100AA
+0x12 // Motherboard SAC-001 - FAT chassis C - Retail CUH-12xx - TestKit DUH-T1200AA
+0x13 // Motherboard SAD-001 / SAD-002 / SAD-003 - SLIM chassis D - Retail CUH-20xx
+0x14 // Motherboard SAE-001 / SAE-002 / SAE-003 / SAE-004 - SLIM chassis E - Retail CUH-21xx
+0x211 // Motherboard NVA-001 - PRO chassis A - Retail CUH-70xx (seen on units shipped with FW 3.70-4.70)
+0x212 // Motherboard NVB-003 / NVB-004 - PRO chassis B - Retail CUH-71xx
 */
 
 /* Factory code <-> Chassis table
