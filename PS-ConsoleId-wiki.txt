@@ -135,9 +135,9 @@ PSP Product Sub Code
 0x02 // Motherboard TA-082 / TA-086 (PSP-10XX) min FW 1.00
 0x03 // Motherboard TA-085 / TA-088 (PSP-20XX)
 0x04 // Motherboard TA-090 / TA-092 (PSP-30XX)
-0x05 // Motherboard TA-091 (PSP-N10XX)
+0x05 // Motherboard TA-091 (PSP-N10XX) min FW 5.70
 0x06 // Motherboard TA-093 (PSP-30XX)
-0x07 // Motherboard unknown (PSP-30XX)
+0x07 // Motherboard unknown (?PSP-30XX or PSP-N10XX?)
 0x08 // Motherboard TA-095 (PSP-30XX)
 0x09 // Motherboard TA-096 / TA-097 (PSP-E10XX)
 
