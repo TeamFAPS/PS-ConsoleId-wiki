@@ -54,8 +54,8 @@ XX  X3 or higher = CEX (specific to console selling region)
 
 PSP Product Code
 0x00 // TEST Prototype / Test unit
-0x01 // TOOL DevKit / Tool unit
-0x02 // DEX TestKit / DEX unit
+0x01 // TOOL DevKit / Tool unit - Development Tool DEM-1000 / DTP-T1000
+0x02 // DEX TestKit / DEX unit - Testing Tool DTP-H1500
 0x03 // CEX Japan
 0x04 // CEX North America
 0x05 // CEX Europe/East/Africa
@@ -133,10 +133,10 @@ PS4 Product Code
 PSP Product Sub Code
 0x01 // Motherboard TA-079 / TA-081 (PSP-10XX) min FW 1.00, Motherboard TMU-002 (DTP-L1500 / DTP-H1500)
 0x02 // Motherboard TA-082 / TA-086 (PSP-10XX) min FW 1.00
-0x03 // Motherboard TA-085 / TA-088 (PSP-20XX)
-0x04 // Motherboard TA-090 / TA-092 (PSP-30XX)
+0x03 // Motherboard TA-085 / TA-088 (PSP-20XX) min FW: 3.60 (non TA-088v3), 4.01 (TA-088v3)
+0x04 // Motherboard TA-090 / TA-092 (PSP-30XX) min FW: 4.20, 4.21, 5.03
 0x05 // Motherboard TA-091 (PSP-N10XX) min FW 5.70
-0x06 // Motherboard TA-093 (PSP-30XX)
+0x06 // Motherboard TA-093 (PSP-30XX) min FW: 5.70, 6.20
 0x07 // Motherboard unknown (?PSP-30XX or PSP-N10XX?)
 0x08 // Motherboard TA-095 (PSP-30XX)
 0x09 // Motherboard TA-096 / TA-097 (PSP-E10XX)
