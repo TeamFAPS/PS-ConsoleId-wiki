@@ -133,13 +133,13 @@ PS4 Product Code
 PSP Product Sub Code
 0x01 // Motherboard TA-079 / TA-081 (PSP-10XX 01g) min FW 1.00, Motherboard TMU-002 (DTP-L1500 / DTP-H1500)
 0x02 // Motherboard TA-082 / TA-086 (PSP-10XX 01g) min FW 1.00
-0x03 // Motherboard TA-085 / TA-088 (PSP-20XX 02g) min FW: 3.60 (non TA-088v3), 4.01 (TA-088v3)
+0x03 // Motherboard TA-085 / TA-088 (PSP-20XX 02g) min FW: 3.60 (TA-085v1), 3.95(TA-088v1 or v2) 4.01 (TA-088v3)
 0x04 // Motherboard TA-090 / TA-092 (PSP-30XX 03g) min FW: 4.20, 4.21, 5.03
 0x05 // Motherboard TA-091 (PSP-N10XX 05g) min FW 5.70
-0x06 // Motherboard TA-093 (PSP-30XX 04g) min FW: 5.70, 6.20
+0x06 // Motherboard TA-093 (PSP-30XX 04g) min FW: 5.70, 6.20 (TA-093v2)
 0x07 // Motherboard TA-094 (PSP-N10XX 05g) theoritically
-0x08 // Motherboard TA-095 (PSP-30XX 07g and 09g) min FW 5.70, 6.30, 6.39 (07g)
-0x09 // Motherboard TA-096 / TA-097 (PSP-E10XX 11g) min FW 6.50
+0x08 // Motherboard TA-095 (PSP-30XX 07g and 09g) min: FW 5.70, 6.30, 6.39 (TA-095v2 07g and 09g), ?6.60 (09g)?
+0x09 // Motherboard TA-096 / TA-097 (PSP-E10XX 11g) min FW: 6.50 (TA-096), 6.60 (TA-097)
 
 PS3 Product Sub Code
 0x01 // Motherboard TMU-520 (DECR-1000(A/J), DEH-Z1010), Motherboard COK-001 (DECHSA00A/J, CECHAxx), all DEH/CBEH consoles until CECHAxx
