@@ -184,6 +184,7 @@ PS4 Product Sub Code
 0x12 // Motherboard SAC-001 - FAT chassis C - Retail CUH-12xx - TestKit DUH-T1200AA
 0x13 // Motherboard SAD-001 / SAD-002 / SAD-003 - SLIM chassis D - Retail CUH-20xx
 0x14 // Motherboard SAE-001 / SAE-002 / SAE-003 / SAE-004 - SLIM chassis E - Retail CUH-21xx
+?0x15? // Motherboard SAF-004 / SAF-006 - SLIM chassis F - Retail CUH-22xx
 0x211 // Motherboard NVA-001 - PRO chassis A - Retail CUH-70xx (seen on units shipped with FW 3.70-4.70)
 0x212 // Motherboard NVB-003 / NVB-004 - PRO chassis B - Retail CUH-71xx
 */
