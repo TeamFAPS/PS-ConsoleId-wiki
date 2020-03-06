@@ -162,6 +162,7 @@ PS3 Product Sub Code
 0x12 // ?Motherboard PQX-001 - CECH-42xxA?
 0x13 // ?Motherboard RTX-001 - CECH-43xxB/C?
 0x14 // ?Motherboard RTX-001 - CECH-43xxA?
+???? // Motherboard REX-001 - CECH-43xx?A/B/C?
 
 PSVita Product Sub Code
 0x03 // never seen on any device yet except in the OS. Tool DVT1.
