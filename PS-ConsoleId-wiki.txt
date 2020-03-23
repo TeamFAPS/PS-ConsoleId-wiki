@@ -197,6 +197,6 @@ PS4 Product Sub Code
 0x0C >> 2 = 3
 0x10 >> 2 = 4
 0x14 >> 2 = 5
-0x90-0x93 >> 2 = 36
+0x90-0x93 >> 2 = 36 (refurbished - non genuine)
 0xF4 >> 2 = 61
 */
