@@ -182,6 +182,7 @@ PSVita Product Sub Code
 
 PS4 Product Sub Code
 // Motherboard HAC-001?
+// Motherboard CVN-K12 (0-000-000-15)
 0x10 // Motherboard SAA-001 - FAT chassis A - Retail CUH-10xx - TestKit DUH-T1000AA - DevKit DUH-D1000AA (?CVN-001, CVN-K12?)
 0x11 // Motherboard SAB-001 - FAT chassis B - Retail CUH-11xx - TestKit DUH-T1100AA
 0x12 // Motherboard SAC-001 - FAT chassis C - Retail CUH-12xx - TestKit DUH-T1200AA
