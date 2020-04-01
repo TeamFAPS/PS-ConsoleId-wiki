@@ -165,18 +165,20 @@ PS3 Product Sub Code
 ???? // Motherboard REX-001 - CECH-43xx?A/B/C?
 
 PSVita Product Sub Code
-0x03 // never seen on any device yet except in the OS. Tool DVT1.
-0x05 // Prototype DevKit - Motherboard IRT-001 (DEM-3000H, CP board GCP-001)
-0x09 // never seen on any device yet except in the OS
-0x0A // Prototype - CEM-3000VP1
-0x0B // Prototype DevKit (DEM-3000L)
-0x0C // never seen on any device yet except in the OS
-0x0F // Prototype - CEM-3000NP1
-0x10 // FAT - Motherboard IRS-002 (PCH-10XX / PCH-11XX / PTEL-10XX) or Motherboard IRT-002 (DevKit PDEL-10XX, CP board GCP-002) - factory FW 1.00 or 1.03
+0x03 // Prototype DevKit (Tool DVT1) - never seen on any device yet except in the OS. Maybe CEM-3000E3 or DEM-3000G.
+0x05 // Prototype DevKit (Tool DVT2) - Motherboard IRT-001 (0-835-167-04) (Prototype DevKit DVT2 DEM-3000H)
+0x09 // Prototype - never seen on any device yet except in the OS. Maybe DEM-3000JEC.
+0x0A // Prototype - CEM-3000???. Maybe DEM-3000K.
+0x0B // Prototype - Motherboard IRT-002 (0-851-973-06) (Prototype DevKit NEW DVT1 DEM-3000L)
+0x0C // Prototype - never seen on any device yet except in the OS. Maybe M chassis.
+0x0D // Prototype - never seen. Maybe N chassis.
+0x0E // Prototype - never seen. Maybe O chassis.
+0x0F // Prototype - IRS-002 (0-845-846-U10) (CEM-3000NP1). Maybe DEM-3000P.
+0x10 // FAT - Motherboard IRS-002 (PCH-10XX / PCH-11XX / TestKit PTEL-10XX) or Motherboard IRT-002 (DevKit PDEL-10XX) - factory FW 1.00 or 1.03
 0x11 // FAT - Motherboard IRS-1001 (PCH-11XX) Japanese Sapphire Blue, factory FW 1.81, 2012-09
 0x12 // FAT - Motherboard IRS-1001 (PCH-10XX) Japanese, factory FW 1.81, 2012-09
-0x14 // SLIM - Motherboard USS-1001 (PCH-20XX / PTEL-20XX) - factory FW 2.50, 2013-06
-0x18 // SLIM - Motherboard USS-1002 (PCH-20XX / PTEL-20XX) - factory FW 3.50 or 3.65, 2015-05
+0x14 // SLIM - Motherboard USS-1001 (PCH-20XX / TestKit PTEL-20XX) - factory FW 2.50, 2013-06
+0x18 // SLIM - Motherboard USS-1002 (PCH-20XX / TestKit PTEL-20XX) - factory FW 3.50 or 3.65, 2015-05
 0x201 // PS TV - Motherboard DOL-1001 (VTE-10XX) - factory FW 2.60, white units, 2013-10
 0x202 // PS TV - Motherboard DOL-1002 (VTE-10XX) - factory FW 3.20 or 3.30, black units, year 2014
 
