@@ -108,7 +108,7 @@ PSVita Region Code for CEX PCH-XXxx (CEX):
 See https://playstationdev.wiki/psvitadevwiki/index.php?title=SKU_Models#Region_Code.
 
 PS4 Product Code
-0x180 // TEST Diag (chassis check must be 0x90, 0x91, 0x92 or 0x93)
+0x180 // TEST Diag (factory_code must be 36)
 0x181 // TOOL DevKit
 0x182 // DEX TestKit
 0x183 // CEX Retail JAPAN
@@ -126,6 +126,7 @@ PS4 Product Code
 0x18F // CEX Retail BRAZIL
 0x190 // CEX Retail ?region?
 0x191 // CEX Retail ?region?
+0x1A0 // ARCADE Arcade KRATOS
 */
 
 /* Product Sub Code (Model revision)
