@@ -1,27 +1,27 @@
-typedef struct PsCode {
-	uint16_t company_code; // {0, 1}
-	uint16_t product_code;
-	uint16_t product_sub_code;
-	uint16_t factory_code; // = chassis_check >> 2;
-} PsCode;
-
-typedef struct ConsoleId {
+typedef struct SceConsoleId {
 	uint16_t unk; // {0, 0}
 	uint16_t company_code; // {0, 1}
 	uint16_t product_code;
 	uint16_t product_sub_code;
 	uint8_t chassis_check;
-	char unknown[7];
-} ConsoleId;
+	uint8_t unknown[7];
+} SceConsoleId;
 
-// "Magics" for easier memory dumps analysis usage
-char pscode_magic[4] = {0, 1};
-char consoleid_magic[4] = {0, 0, 0, 1};
+typedef struct ScePsCode {
+	uint16_t company_code; // {0, 1}
+	uint16_t product_code;
+	uint16_t product_sub_code;
+	uint16_t factory_code; // = chassis_check >> 2;
+} ScePsCode;
+
+// "Magics" for easier memory dumps analysis
+uint8_t consoleid_magic[4] = {0, 0, 0, 1};
+uint8_t pscode_magic[4] = {0, 1};
 
 /* Product Code in PsCode spoofing on Retail PSVita results
  * 0x100 -- IsTest, no red message, no expiration date
  * 0x101 -- IsTestOrTool, battery backup has failed red message, activated 32000+ days
- * 0x102 -- IsNonCEX, expiration red message, expired date
+ * 0x102 -- IsDEX, expiration red message, expired date
  * 0x103 -- Health warning on boot
  * 0x104 -- Health warning on boot
  * 0x105 -- Epilepsy warning on boot
@@ -209,6 +209,6 @@ It might be a code representing the factory location.
 0x0C >> 2 = 3
 0x10 >> 2 = 4
 0x14 >> 2 = 5
-0x90 >> 2 = 36 (detected as manufacturing by PSVita OS)
+0x90 >> 2 = 36 (detected as non genuine by PSVita OS)
 0xF4 >> 2 = 61 (found on refurbished PS3)
 */
