@@ -200,7 +200,7 @@ PS4 Product Sub Code
 ?0x15? // Motherboard SAF-004 / SAF-006 - SLIM chassis F - Retail CUH-22xx
 0x211 // Motherboard NVA-001 - PRO chassis A - Retail CUH-70xx (seen on units shipped with FW 3.70-4.70)
 0x212 // Motherboard NVB-003 / NVB-004 - PRO chassis B - Retail CUH-71xx
-?0x213? // Motherboard NVG-001 / NVG-002 - PRO chassis C - Retail CUH-72xx
+0x213 // Motherboard NVG-001 / NVG-002 - PRO chassis C - Retail CUH-72xx
 */
 
 /* Factory code <-> Chassis table
