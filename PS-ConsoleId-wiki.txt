@@ -214,5 +214,5 @@ It might be a code representing the factory location.
 0x10 >> 2 = 4
 0x14 >> 2 = 5
 0x90 >> 2 = 36 (detected as Diag by PSVita OS)
-0xF4 >> 2 = 61 (found on refurbished PS3)
+0xF4 >> 2 = 61 (found on retail PSVita and refurbished PS3)
 */
