@@ -188,19 +188,53 @@ PSVita Product Sub Code
 0x408 // PS TV DevKit (Tool) - never seen on any device yet except in the OS.
 
 PS4 Product Sub Code
-// Motherboard HAC-001?
-// Motherboard CVN-001?
+// SA%c-%c%02x%s%s
+// HAC-%c%02x%s
+// NV%c-%c%02x%s%s
+// ALPHA-%c%02x
+// (GKO)
+// -BEP
+// -BAP
+// -BEO
+// -BAO
+// -BEOT
+// Motherboard SYRUP-11?
+// Motherboard SYRUP-12?
+// Motherboard CAVERN-G01?
+// Motherboard CAVERN-T01?
+// Motherboard CAVERN-T02?
+// Motherboard CAVERN-T03?
+// Motherboard CAVERN-T04?
+// Motherboard CAVERN-T05?
+// Motherboard CAVERN-T06?
+// Motherboard CAVERN-K01?
+// Motherboard CAVERN-K02?
+// Motherboard CAVERN-K03?
+// Motherboard CAVERN-K04?
+// Motherboard CAVERN-K05?
+// Motherboard CAVERN-K06?
+// Motherboard CAVERN-K11?
+// Motherboard CAVERN-K12 - CVN-K12 (0-000-000-15)?
+// Motherboard CAVERN-R01?
+// Motherboard CAV-01 - CVN-001 (1-889-207-12) - DevKit DUH-D1000xA?
+// Motherboard SAA-T01?
+// Motherboard SAA-T02?
+// Motherboard SAA-K01?
+// Motherboard SAA-K02 (0-000-000-05)?
 // Motherboard SAA-K23 (0-000-000-13)?
-// Motherboard SAB-K02 (0-000-000-05)?
-0x10 // Motherboard SAA-001 - FAT chassis A - Retail CUH-10xx - TestKit DUH-T1000AA - Motherboard CVN-K12 (0-000-000-15) / ?CVN-001? DevKit DUH-D1000AA
-0x11 // Motherboard SAB-001 - FAT chassis B - Retail CUH-11xx - TestKit DUH-T1100AA
-0x12 // Motherboard SAC-001 - FAT chassis C - Retail CUH-12xx - TestKit DUH-T1200AA
-0x13 // Motherboard SAD-001 / SAD-002 / SAD-003 - SLIM chassis D - Retail CUH-20xx
-0x14 // Motherboard SAE-001 / SAE-002 / SAE-003 / SAE-004 - SLIM chassis E - Retail CUH-21xx
-?0x15? // Motherboard SAF-004 / SAF-006 - SLIM chassis F - Retail CUH-22xx
-0x211 // Motherboard NVA-001 - PRO chassis A - Retail CUH-70xx (seen on units shipped with FW 3.70-4.70)
-0x212 // Motherboard NVB-003 / NVB-004 - PRO chassis B - Retail CUH-71xx
-0x213 // Motherboard NVG-001 / NVG-002 - PRO chassis C - Retail CUH-72xx
+// Motherboard SAA-R01?
+// Motherboard SAB-K02?
+// Motherboard SAA-01?
+// Motherboard HAC-001?
+0x10 // FAT chassis A - Motherboard SAA-001 - Retail CUH-10xx - TestKit DUH-T1000AA
+0x11 // FAT chassis B - Motherboard SAB-001 - Retail CUH-11xx - TestKit DUH-T1100AA
+0x12 // FAT chassis C - Motherboard SAC-001 - Retail CUH-12xx - TestKit DUH-T1200AA
+0x13 // SLIM chassis D - Motherboard SAD-001 / SAD-002 / SAD-003 - Retail CUH-20xx
+0x14 // SLIM chassis E - Motherboard SAE-001 / SAE-002 / SAE-003 / SAE-004 - Retail CUH-21xx
+?0x15? // SLIM chassis F - Motherboard SAF-004 / SAF-006 - Retail CUH-22xx
+0x211 // PRO chassis A - Motherboard NVA-001 - Retail CUH-70xx (seen on units shipped with FW 3.70-4.70)
+0x212 // PRO chassis B - Motherboard NVB-003 / NVB-004 - Retail CUH-71xx
+0x213 // PRO chassis C - Motherboard NVG-001 / NVG-002 - Retail CUH-72xx
 */
 
 /* Factory code <-> Chassis table
