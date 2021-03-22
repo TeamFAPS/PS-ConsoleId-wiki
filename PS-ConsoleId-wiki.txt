@@ -1,17 +1,30 @@
-typedef struct SceConsoleId {
+// Structure for systems that do not support bitfield structures
+typedef struct SceConsoleIdSimplified {
 	uint16_t unk; // {0, 0}
 	uint16_t company_code; // {0, 1}
 	uint16_t product_code;
 	uint16_t product_sub_code;
-	uint8_t chassis_check;
-	uint8_t unknown[7];
+	uint8_t second_half[8];
+} SceConsoleIdSimplified;
+
+// Structure adapted for little-endian machines (unsure if working on big-endian machines)
+typedef struct SceConsoleId {
+	uint16_t unk;          // {0, 0}
+	uint16_t company_code; // {0, 1}
+	uint16_t product_code;
+	uint16_t product_sub_code;
+	uint8_t ps_flags_major: 2;
+	uint8_t factory_code: 6;
+	uint8_t unique_id_major: 2;
+	uint8_t ps_flags_minor: 6;
+	uint8_t unique_id_minor[6];
 } SceConsoleId;
 
 typedef struct ScePsCode {
 	uint16_t company_code; // {0, 1}
 	uint16_t product_code;
 	uint16_t product_sub_code;
-	uint16_t factory_code; // = chassis_check >> 2;
+	uint16_t factory_code;
 } ScePsCode;
 
 // "Magics" for easier memory dumps analysis
@@ -236,16 +249,18 @@ PS4 Product Sub Code
 0x213 // Pro chassis C - Motherboard NVG-001 / NVG-002 - NVG-003 - Retail CUH-72xx
 */
 
-/* Factory code <-> Chassis table
+/* Factory code
 
-It might be a code representing the factory location.
+It is a code representing the factory location. By extension, it also represents if the console has been or is being refurbished/diagnosed, as it is done in a special service center.
 
-// chassis_check >> 2 = factory_code;
-0x03 >> 2 = 0
-0x04 >> 2 = 1
-0x0C >> 2 = 3
-0x10 >> 2 = 4
-0x14 >> 2 = 5
-0x90 >> 2 = 36 (detected as Diag by PSVita OS)
-0xF4 >> 2 = 61 (found on retail PSVita and refurbished PS3)
+Some people called console_id[8] chassis_check and used the formula: chassis_check >> 2 = factory_code;
+
+0
+1
+3
+4
+5
+35 (detected as Diag by PSP OS)
+36 (detected as Diag by PSVita OS)
+61 (found on retail PSVita and refurbished PS3)
 */
