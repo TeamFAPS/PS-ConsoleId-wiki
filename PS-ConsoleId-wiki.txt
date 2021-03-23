@@ -223,7 +223,7 @@ PS4 Product Sub Code
 // Motherboard CAVERN-K01?
 // Motherboard CAVERN-K02?
 // Motherboard CAVERN-K03?
-// Motherboard CAVERN-K04 - CVN-K04 (0-000-000-11) 2012 week 50 - Prototype DevKit DEHT-AW01AK-K5?
+0x05 // Motherboard CAVERN-K04 - CVN-K04 (0-000-000-11) 2012 week 50 - Prototype DevKit DEHT-AW01AK-K5?
 // Motherboard CAVERN-K05?
 // Motherboard CAVERN-K06?
 // Motherboard CAVERN-K11?
