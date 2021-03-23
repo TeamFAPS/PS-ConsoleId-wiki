@@ -176,7 +176,9 @@ PS3 Product Sub Code
 0x12 // ?Motherboard PQX-001 - CECH-42xxA?
 0x13 // ?Motherboard RTX-001 - CECH-43xxB/C?
 0x14 // ?Motherboard RTX-001 - CECH-43xxA?
-???? // Motherboard REX-001 - CECH-43xx?A/B/C?
+???? // Motherboard REX-001 (2014 week 30) - CECH-43xx?A/B/C?
+0x8F // Unknown DEX Motherboard - Forces arcade HDD keyset.
+0x90 // Unknown DEX Motherboard - Forces arcade HDD keyset.
 
 PSVita Product Sub Code
 0x02 // Prototype CEX - never seen on any device yet except in the OS.
@@ -255,14 +257,15 @@ It is a code representing the factory location. By extension, it also represents
 
 Some people called console_id[8] chassis_check and used the formula: chassis_check >> 2 = factory_code;
 
-0
-1
+0: maybe invalid
+1: Japan -> a lot of PS3 DevKit and TestKit
 3
-4
-5
-35 (detected as Diag by PSP OS)
-36 (detected as Diag by PSVita OS)
-61 (found on retail PSVita and refurbished PS3)
+4: -> a lot of PS3 retail
+5: -> a lot of PS3 retail
+6: ?Brazil? -> a lot of PS3 Super Slim Brazil with Product Sub Code 0xF, 0x11, 0x13
+35: Japan Diag Center 1 -> detected as Diag/QA by PSP OS
+36: Japan Diag Center 2 -> detected as Diag by PSVita OS
+61: some Servicing Center -> retail PSVita and refurbished PS3
 */
 
 /* Ps Flags
