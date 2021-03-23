@@ -223,7 +223,7 @@ PS4 Product Sub Code
 // Motherboard CAVERN-K01?
 // Motherboard CAVERN-K02?
 // Motherboard CAVERN-K03?
-// Motherboard CAVERN-K04 - CVN-K04 (0-000-000-11) 2012 week 50 - Prototype DevKit DEHT-AW01AK?
+// Motherboard CAVERN-K04 - CVN-K04 (0-000-000-11) 2012 week 50 - Prototype DevKit DEHT-AW01AK-K5?
 // Motherboard CAVERN-K05?
 // Motherboard CAVERN-K06?
 // Motherboard CAVERN-K11?
@@ -263,4 +263,12 @@ Some people called console_id[8] chassis_check and used the formula: chassis_che
 35 (detected as Diag by PSP OS)
 36 (detected as Diag by PSVita OS)
 61 (found on retail PSVita and refurbished PS3)
+*/
+
+/* Ps Flags
+
+On PSP, there are 8 bitflags in PSID. It is only used when PSP has Diag Factory Code. They might be a sort of QA flags. On PS3 and PS Vita, QA flags are stored in Syscon NVS.
+
+There is no evidence of usage of this area on PS3, PS Vita and PS4, though it is not zeroed. This area might be used for other things on PS3, PS Vita and PS4, like for example to extend the unique ID.
+
 */
