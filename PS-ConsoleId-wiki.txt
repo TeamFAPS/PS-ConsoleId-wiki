@@ -31,9 +31,9 @@ typedef struct ScePsCode {
 uint8_t consoleid_magic[4] = {0, 0, 0, 1};
 uint8_t pscode_magic[4] = {0, 1};
 
-/* Product Code in PsCode spoofing on Retail PSVita results
+/* Product Code in PsCode spoofing on Consumer PSVita results
  * 0x100 -- IsTest, no red message, no expiration date
- * 0x101 -- IsTestOrTool, battery backup has failed red message, activated 32000+ days
+ * 0x101 -- IsTool, battery backup has failed red message, activated 32000+ days
  * 0x102 -- IsDEX, expiration red message, expired date
  * 0x103 -- Health warning on boot
  * 0x104 -- Health warning on boot
@@ -48,7 +48,7 @@ uint8_t pscode_magic[4] = {0, 1};
  * 0x10D -- ??
  * 0x10E -- ??
  * 0x10F -- ??
- * 0x110+ -- error message in japanese (error C1-13819-2) certainly related to RegistryMgr
+ * 0x110+ -- error message in japanese (error C1-13819-2) certainly related to the Registry Manager
 */
 
 /* Product Code (wrongly called Target Id)
@@ -66,80 +66,80 @@ XX  X3 or higher = CEX (specific to console selling region)
 
 
 PSP Product Code
-0x00 // TEST Prototype / Test unit
-0x01 // TOOL DevKit / Tool unit - Development Tool DEM-1000, DTP-T1000
-0x02 // DEX TestKit / DEX unit - Testing Tool DTP-H1500
-0x03 // CEX Japan
-0x04 // CEX North America
-0x05 // CEX Europe/East/Africa
-0x06 // CEX Korea
-0x07 // CEX Great Britain/United Kingdom
-0x08 // CEX Mexico/Latin America
-0x09 // CEX Australia/New Zeland
-0x0A // CEX Hong Kong/Singapore
-0x0B // CEX Taiwan
-0x0C // CEX Russia
-0x0D // CEX China
+0x00 // Test - Prototype / Test unit
+0x01 // Tool - DevKit / Development Tool  - Development Tool DEM-1000, DTP-T1000
+0x02 // DEX - TestKit / Testing Kit - Testing Tool DTP-H1500
+0x03 // CEX - Japan
+0x04 // CEX - North America
+0x05 // CEX - Europe/East/Africa
+0x06 // CEX - Korea
+0x07 // CEX - Great Britain/United Kingdom
+0x08 // CEX - Mexico/Latin America
+0x09 // CEX - Australia/New Zeland
+0x0A // CEX - Hong Kong/Singapore
+0x0B // CEX - Taiwan
+0x0C // CEX - Russia
+0x0D // CEX - China
 0x0E // AVTOOL - AV Testing Tool DTP-L1500
 
 PS3 Product Code
-0x80 // TEST - AVTest / DECHS (TEST)
-0x81 // TOOL - SD System Debugger / DECR Reference Tool / DECR (TOOL)
+0x80 // Test - AVTest / DECHS (TEST)
+0x81 // Tool - SD System Debugger / DECR Reference Tool / DECR (TOOL)
 0x82 // DEX - Debug / DECH (DEX) - DECH-XXXX - DEH-FH1500J-A from mid April 2008
-0x83 // CEX - Retail or Shop Kiosk - Japan (J1)
-0x84 // CEX - Retail or Shop Kiosk - USA (UC2)
-0x85 // CEX - Retail or Shop Kiosk - Europe (CEL)
-0x86 // CEX - Retail or Shop Kiosk - Korea (KR2)
-0x87 // CEX - Retail or Shop Kiosk - United Kingdom (CEK)
-0x88 // CEX - Retail or Shop Kiosk - Mexico (MX2)
-0x89 // CEX - Retail or Shop Kiosk - Australia/New Zealand (AU3)
-0x8A // CEX - Retail or Shop Kiosk - South Asia (E12)
-0x8B // CEX - Retail or Shop Kiosk - Taiwan (TW1)
-0x8C // CEX - Retail or Shop Kiosk - Russia (RU3)
-0x8D // CEX - Retail or Shop Kiosk - China (never released) (CN9)
-0x8E // CEX - Retail or Shop Kiosk - Hong Kong (HK5)
-0x8F // CEX - Retail or Shop Kiosk - Brazil (BR2)
+0x83 // CEX - Consumer or Shop Kiosk - Japan (J1)
+0x84 // CEX - Consumer or Shop Kiosk - USA (UC2)
+0x85 // CEX - Consumer or Shop Kiosk - Europe (CEL)
+0x86 // CEX - Consumer or Shop Kiosk - Korea (KR2)
+0x87 // CEX - Consumer or Shop Kiosk - United Kingdom (CEK)
+0x88 // CEX - Consumer or Shop Kiosk - Mexico (MX2)
+0x89 // CEX - Consumer or Shop Kiosk - Australia/New Zealand (AU3)
+0x8A // CEX - Consumer or Shop Kiosk - South Asia (E12)
+0x8B // CEX - Consumer or Shop Kiosk - Taiwan (TW1)
+0x8C // CEX - Consumer or Shop Kiosk - Russia (RU3)
+0x8D // CEX - Consumer or Shop Kiosk - China (never released) (CN9)
+0x8E // CEX - Consumer or Shop Kiosk - Hong Kong (HK5)
+0x8F // CEX - Consumer or Shop Kiosk - Brazil (BR2)
 0xA0 // ARC - Arcade
 
 PSVita Product Code
-0x100 // TEST - Prototype / Test unit
-0x101 // TOOL - DevKit / Tool unit - PDEL / DEM
-0x102 // DEX - TestKit / DEX unit - PTEL
-0x103 // CEX - Retail - J1 - Japan
-0x104 // CEX - Retail - UC2 - North America
-0x105 // CEX - Retail - CEL - Europe/East/Africa // PCH-xx04
-0x106 // CEX - Retail - KR2 - South Korea
-0x107 // CEX - Retail - CEK - Great Britain/United Kingdom // PCH-xx03 VTE-1016
-0x108 // CEX - Retail - MX2 - Mexico/Latin America
-0x109 // CEX - Retail - AU3 - Australia/New Zealand
-0x10A // CEX - Retail - E12 - Hong Kong/Macao/Singapore/Malaysia
-0x10B // CEX - Retail - TW1 - Taiwan
-0x10C // CEX - Retail - RU3 - Russia - added in ????
-0x10D // CEX - Retail - CN9 - China - added in 2015
+0x100 // Test - Prototype / Test unit
+0x101 // Tool - DevKit / Development Tool Kit - PDEL / DEM
+0x102 // DEX - TestKit / Testing Kit - PTEL
+0x103 // CEX - Consumer - J1 - Japan
+0x104 // CEX - Consumer - UC2 - North America
+0x105 // CEX - Consumer - CEL - Europe/East/Africa // PCH-xx04
+0x106 // CEX - Consumer - KR2 - South Korea
+0x107 // CEX - Consumer - CEK - Great Britain/United Kingdom // PCH-xx03, VTE-1016
+0x108 // CEX - Consumer - MX2 - Mexico/Latin America
+0x109 // CEX - Consumer - AU3 - Australia/New Zealand
+0x10A // CEX - Consumer - E12 - Hong Kong/Macao/Singapore/Malaysia
+0x10B // CEX - Consumer - TW1 - Taiwan
+0x10C // CEX - Consumer - RU3 - Russia - added in ????
+0x10D // CEX - Consumer - CN9 - China - added in 2015
 
 PSVita Region Code for CEX PCH-XXxx (CEX):
 See https://playstationdev.wiki/psvitadevwiki/index.php?title=SKU_Models#Region_Code.
 
 PS4 Product Code
-0x180 // TEST Diag (factory_code must be 36)
-0x181 // TOOL DevKit
-0x182 // DEX TestKit
-0x183 // CEX Retail JAPAN
-0x184 // CEX Retail USA - CUH-xx15
-0x185 // CEX Retail EUROPE
-0x186 // CEX Retail KOREA
-0x187 // CEX Retail UK - CUH-xx16
-0x188 // CEX Retail MEXICO
-0x189 // CEX Retail AUSTRALIA - CUH-xx02
-0x18A // CEX Retail SOUTH ASIA
-0x18B // CEX Retail TAIWAN
-0x18C // CEX Retail RUSSIA
-0x18D // CEX Retail CHINA
-0x18E // CEX Retail HK
-0x18F // CEX Retail BRAZIL
-0x190 // CEX Retail ?region?
-0x191 // CEX Retail ?region?
-0x1A0 // ARCADE Arcade KRATOS
+0x180 // Test - Prototype / Test / Diag unit
+0x181 // Tool - DevKit / Development Tool Kit
+0x182 // DEX - TestKit / Testing Kit
+0x183 // CEX - Consumer JAPAN
+0x184 // CEX - Consumer USA - CUH-xx15
+0x185 // CEX - Consumer EUROPE
+0x186 // CEX - Consumer KOREA
+0x187 // CEX - Consumer UK - CUH-xx16
+0x188 // CEX - Consumer MEXICO
+0x189 // CEX - Consumer AUSTRALIA - CUH-xx02
+0x18A // CEX - Consumer SOUTH ASIA
+0x18B // CEX - Consumer TAIWAN
+0x18C // CEX - Consumer RUSSIA
+0x18D // CEX - Consumer CHINA
+0x18E // CEX - Consumer HK
+0x18F // CEX - Consumer BRAZIL
+0x190 // CEX - Consumer ?region?
+0x191 // CEX - Consumer ?region?
+0x1A0 // ARCADE - Kratos
 */
 
 /* Product Sub Code (Model revision)
@@ -236,19 +236,19 @@ PS4 Product Sub Code
 // Motherboard SAA-T02?
 // Motherboard SAA-K01?
 // Motherboard SAA-K02?
-// Motherboard SAA-K23 (0-000-000-13) - Prototype Retail CUH-10xx?
+// Motherboard SAA-K23 (0-000-000-13) - Prototype Consumer CUH-10xx?
 // Motherboard SAA-R01?
-// Motherboard SAB-K02 (0-000-000-05) - Prototype Retail CUH-11xx?
-0x10 // Fat chassis A - Motherboard SAA-001 - Retail CUH-10xx - TestKit DUH-T1000AA
-0x11 // Fat chassis B - Motherboard SAB-001 - Retail CUH-11xx - TestKit DUH-T1100AA
-0x12 // Fat chassis C - Motherboard SAC-001 - Retail CUH-12xx - TestKit DUH-T1200AA
-0x13 // Slim chassis D - Motherboard SAD-001 / SAD-002 / SAD-003 - Retail CUH-20xx - TestKit DUH-T20xx
-0x14 // Slim chassis E - Motherboard SAE-001 / SAE-002 / SAE-003 / SAE-004 - Retail CUH-21xx
-?0x15? // Slim chassis F - Motherboard SAF-003 / SAF-004 / SAF-006 - Retail CUH-22xx
+// Motherboard SAB-K02 (0-000-000-05) - Prototype Consumer CUH-11xx?
+0x10 // Fat chassis A - Motherboard SAA-001 - Consumer CUH-10xx - TestKit DUH-T1000AA
+0x11 // Fat chassis B - Motherboard SAB-001 - Consumer CUH-11xx - TestKit DUH-T1100AA
+0x12 // Fat chassis C - Motherboard SAC-001 - Consumer CUH-12xx - TestKit DUH-T1200AA
+0x13 // Slim chassis D - Motherboard SAD-001 / SAD-002 / SAD-003 - Consumer CUH-20xx - TestKit DUH-T20xx
+0x14 // Slim chassis E - Motherboard SAE-001 / SAE-002 / SAE-003 / SAE-004 - Consumer CUH-21xx
+?0x15? // Slim chassis F - Motherboard SAF-003 / SAF-004 / SAF-006 - Consumer CUH-22xx
 0x210 // Pro Devkit chassis - Motherboard HAC-001 - Pro DevKit DUH-D7000JA (1-981-411-11) with Communication Processor BDT-010 (1-981-412-11)
-0x211 // Pro chassis A - Motherboard NVA-001 - Retail CUH-70xx (seen on units shipped with FW 3.70-4.70) - Pro TestKit DUH-T70xx
-0x212 // Pro chassis B - Motherboard NVB-003 / NVB-004 - Retail CUH-71xx
-0x213 // Pro chassis C - Motherboard NVG-001 / NVG-002 - NVG-003 - Retail CUH-72xx
+0x211 // Pro chassis A - Motherboard NVA-001 - Consumer CUH-70xx (seen on units shipped with FW 3.70-4.70) - Pro TestKit DUH-T70xx
+0x212 // Pro chassis B - Motherboard NVB-003 / NVB-004 - Consumer CUH-71xx
+0x213 // Pro chassis C - Motherboard NVG-001 / NVG-002 - NVG-003 - Consumer CUH-72xx
 */
 
 /* Factory code
@@ -260,12 +260,12 @@ Some people called console_id[8] chassis_check and used the formula: chassis_che
 0: maybe invalid
 1: Japan -> a lot of PS3 DevKit and TestKit
 3
-4: -> a lot of PS3 retail
-5: -> a lot of PS3 retail
+4: -> a lot of Consumer PS3
+5: -> a lot of Consumer PS3
 6: ?Brazil? -> a lot of PS3 Super Slim Brazil with Product Sub Code 0xF, 0x11, 0x13
-35: Japan Diag Center 1 -> detected as Diag/QA by PSP OS
-36: Japan Diag Center 2 -> detected as Diag by PSVita OS
-61: some Servicing Center -> retail PSVita and refurbished PS3
+35: Japan Diag Center 1 -> detected by OS as Diag/QA on PSP
+36: Japan Diag Center 2 -> detected by OS as Diag on PS Vita CEX JP and PS4 Test
+61: some Servicing Center -> Consumer PSVita and refurbished PS3
 */
 
 /* Ps Flags
