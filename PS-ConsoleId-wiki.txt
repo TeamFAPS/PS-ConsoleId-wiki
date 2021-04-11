@@ -201,6 +201,7 @@ PSVita Product Sub Code
 0x201 // PS TV - Motherboard DOL-1001 (VTE-10XX) - factory FW 2.60 (?or 2.50?) white units 2013-10, factory FW 3.20 black units year 2014
 0x202 // PS TV - Motherboard DOL-1002 (VTE-10XX) - factory FW 3.30 black units year 2015
 0x408 // PS TV DevKit (Tool) - never seen on any device yet except in the OS.
+0x602 // PS TV TestKit (Dolce DVT WLAN DEX) - Motherboard ?THV-1000 D1? (CEM-3000P01) - factory FW 2.50, white color
 
 PS4 Product Sub Code
 // SA%c-%c%02x%s%s
@@ -257,15 +258,15 @@ It is a code representing the factory location. By extension, it also represents
 
 Some people called console_id[8] chassis_check and used the formula: chassis_check >> 2 = factory_code;
 
-0: maybe invalid
-1: Japan -> a lot of PS3 DevKit and TestKit
-3
-4: -> a lot of Consumer PS3
-5: -> a lot of Consumer PS3
-6: ?Brazil? -> a lot of PS3 Super Slim Brazil with Product Sub Code 0xF, 0x11, 0x13
+0: maybe invalid, on a CEM-3000?NP1? (to check)
+1: Japan -> many PS3 DevKit and TestKit, PS Vita DEM, PDEL, some CEM
+3: China -> most Consumer PCH, DEX PTEL and PS TV TestKit PS Vita
+4: -> many Consumer PS3
+5: -> many Consumer PS3
+6: ?Brazil? -> many PS3 Super Slim Brazil with Product Sub Code 0xF, 0x11, 0x13
 35: Japan Diag Center 1 -> detected by OS as Diag/QA on PSP
 36: Japan Diag Center 2 -> detected by OS as Diag on PS Vita CEX JP and PS4 Test
-61: some Servicing Center -> Consumer PSVita and refurbished PS3
+61: some Servicing Center -> Consumer PS Vita and refurbished PS3
 */
 
 /* Ps Flags
@@ -273,5 +274,4 @@ Some people called console_id[8] chassis_check and used the formula: chassis_che
 On PSP, there are 8 bitflags in PSID. It is only used when PSP has Diag Factory Code. They might be a sort of QA flags. On PS3 and PS Vita, QA flags are stored in Syscon NVS.
 
 There is no evidence of usage of this area on PS3, PS Vita and PS4, though it is not zeroed. This area might be used for other things on PS3, PS Vita and PS4, like for example to extend the unique ID.
-
 */
