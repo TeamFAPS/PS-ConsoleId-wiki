@@ -184,7 +184,7 @@ PSVita Product Sub Code
 0x02 // Prototype CEX - never seen on any device yet except in the OS.
 0x03 // Prototype DevKit (Tool DVT1) - never seen on any device yet except in the OS. Maybe CEM-3000E3 or DEM-3000G.
 0x04 // Prototype DevKit - never seen on any device yet except in the OS.
-0x05 // Prototype DevKit (Tool DVT2) - Motherboard IRT-001 (0-835-167-04) (Prototype DevKit DVT2 DEM-3000H)
+0x05 // Prototype DevKit (Tool DVT2) - Motherboard IRT-001 (0-835-167-04) (Prototype DevKit DVT2 internal System Debugger DEM-3000H)
 0x07 // Prototype CEX - never seen on any device yet except in the OS.
 0x09 // Prototype - never seen on any device yet except in the OS. Maybe DEM-3000JEC.
 0x0A // Prototype - DEX CEM-3000??? with min FW 0.990. Maybe DEM-3000K.
@@ -192,7 +192,7 @@ PSVita Product Sub Code
 0x0C // Prototype - never seen on any device yet except in the OS. Maybe M chassis.
 0x0D // Prototype - never seen. Maybe N chassis.
 0x0E // Prototype - never seen. Maybe O chassis.
-0x0F // Prototype - IRS-002 (0-845-846-U10) (CEM-3000NP1). Maybe DEM-3000P.
+0x0F // Prototype - Motherboard IRS-002 (0-845-846-U10) (CEM-3000NP1). Maybe DEM-3000P.
 0x10 // FAT - Motherboard IRS-002 (PCH-10XX / PCH-11XX / TestKit PTEL-10XX) or Motherboard IRT-002 (DevKit PDEL-10XX) - factory FW 1.00 or 1.03
 0x11 // FAT - Motherboard IRS-1001 (PCH-11XX) factory FW 1.81, min FW 1.80, 2012-09
 0x12 // FAT - Motherboard IRS-1001 (PCH-10XX) factory FW 1.81, min FW 1.80, 2012-09
@@ -201,7 +201,7 @@ PSVita Product Sub Code
 0x201 // PS TV - Motherboard DOL-1001 (VTE-10XX) - factory FW 2.60 (?or 2.50?) white units 2013-10, factory FW 3.20 black units year 2014
 0x202 // PS TV - Motherboard DOL-1002 (VTE-10XX) - factory FW 3.30 black units year 2015
 0x408 // PS TV DevKit (Tool) - never seen on any device yet except in the OS.
-0x602 // PS TV TestKit (Dolce DVT WLAN DEX) - Motherboard ?THV-1000 D1? (CEM-3000P01) - factory FW 2.50, white color
+0x602 // PS TV Prototype TestKit (Dolce DVT WLAN DEX) - Motherboard DOL-1001 (0-DOL-001-U3A) (CEM-3000P01 / THV-1000 D1) - factory FW 2.50, white color
 
 PS4 Product Sub Code
 // SA%c-%c%02x%s%s
