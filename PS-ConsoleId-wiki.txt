@@ -187,7 +187,7 @@ PSVita Product Sub Code
 0x05 // Prototype DevKit (Tool DVT2) - Motherboard IRT-001 (0-835-167-04) (Prototype DevKit DVT2 internal System Debugger DEM-3000H)
 0x07 // Prototype CEX - never seen on any device yet except in the OS.
 0x09 // Prototype - never seen on any device yet except in the OS. Maybe DEM-3000JEC.
-0x0A // Prototype DEX - CEM-3000VP1 with min FW 0.990. Maybe DEM-3000K.
+0x0A // Prototype DEX - CEM-3000NE2 with min FW 0.990. Maybe DEM-3000K.
 0x0B // Prototype - Motherboard IRT-002 (0-851-973-06) (Prototype DevKit NEW DVT1 DEM-3000L)
 0x0C // Prototype - never seen on any device yet except in the OS. Maybe M chassis.
 0x0D // Prototype - never seen. Maybe N chassis.
