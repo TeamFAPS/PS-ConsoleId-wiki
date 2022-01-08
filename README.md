@@ -1,7 +1,29 @@
 # PS-ConsoleId-wiki
-A wiki about PsCode, ConsoleId, PSID, IDPS, openPSID of PSP, PS3, PSVita and PS4.
+A wiki about ConsoleId (PSID, IDPS), openPSID, PsCode, cookedPSID, hardware ID of PSP, PS3, PS Vita and PS4.
 
 Anyone can commit to add more information.
+
+## Quick description of the IDs
+
+### Console ID (PSID, IDPS)
+
+to document
+
+### OpenPSID
+
+to document
+
+### Ps Code
+
+to document
+
+### CookePSID
+
+to document
+
+### Hardware ID
+
+to document
 
 ## More infos
 
