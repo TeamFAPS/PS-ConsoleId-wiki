@@ -1,5 +1,5 @@
 # PS-ConsoleId-wiki
-A wiki about ConsoleId (PSID, IDPS), openPSID, PsCode, cookedPSID, hardware ID of PSP, PS3, PS Vita and PS4.
+A wiki about ConsoleId (PSID, IDPS), openPSID, PsCode, cookedPSID (hwid), hardware Info of PSP, PS3, PS Vita and PS4.
 
 Anyone can commit to add more information.
 
@@ -17,11 +17,11 @@ to document
 
 to document
 
-### CookePSID
+### CookePSID (hwid)
 
 to document
 
-### Hardware ID
+### Hardware Info
 
 to document
 
