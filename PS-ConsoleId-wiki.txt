@@ -1,13 +1,4 @@
-// Structure for systems that do not support bitfield structures
-typedef struct SceConsoleIdSimplified {
-	uint16_t unk; // {0, 0}
-	uint16_t company_code; // {0, 1}
-	uint16_t product_code;
-	uint16_t product_sub_code;
-	uint8_t second_half[8];
-} SceConsoleIdSimplified;
-
-// Structure adapted for little-endian machines (unsure if working on big-endian machines)
+// Bitfield structure adapted for little-endian machines (unsure if working on big-endian machines)
 typedef struct SceConsoleId {
 	uint16_t unk;          // {0, 0}
 	uint16_t company_code; // {0, 1}
@@ -21,6 +12,15 @@ typedef struct SceConsoleId {
 	uint32_t random_stamp;
 } SceConsoleId;
 
+// Structure for systems that do not support bitfield structures. second_half has to be parsed manually with shifts.
+typedef struct SceConsoleIdSimplified {
+	uint16_t unk; // {0, 0}
+	uint16_t company_code; // {0, 1}
+	uint16_t product_code;
+	uint16_t product_sub_code;
+	uint8_t second_half[8];
+} SceConsoleIdSimplified;
+
 typedef struct ScePsCode {
 	uint16_t company_code; // {0, 1}
 	uint16_t product_code;
@@ -32,7 +32,7 @@ typedef struct ScePsCode {
 uint8_t consoleid_magic[4] = {0, 0, 0, 1};
 uint8_t pscode_magic[4] = {0, 1};
 
-/* Product Code in PsCode spoofing on Consumer PSVita results
+/* Product Code in PsCode spoofing on Consumer PS Vita results
  * 0x100 -- IsTest, no red message, no expiration date
  * 0x101 -- IsTool, battery backup has failed red message, activated 32000+ days
  * 0x102 -- IsDEX, expiration red message, expired date
@@ -47,9 +47,7 @@ uint8_t pscode_magic[4] = {0, 1};
  * 0x10B -- ??
  * 0x10C -- Epilepsy warning on boot // checked on PCH-1008 and PCH-1108
  * 0x10D -- ??
- * 0x10E -- ??
- * 0x10F -- ??
- * 0x110+ -- error message in japanese (error C1-13819-2) certainly related to the Registry Manager
+ * 0x10E+ -- error message in japanese (error C1-13819-2) certainly related to the Registry Manager
 */
 
 /* Product Code (wrongly called Target Id)
@@ -60,8 +58,8 @@ Quick determination:
 01  0X = PSV
 01  8X = PS4
 
-XX  X0 = TEST
-XX  X1 = TOOL
+XX  X0 = Test
+XX  X1 = Tool
 XX  X2 = DEX
 XX  X3 or higher = CEX (specific to console selling region)
 
@@ -102,7 +100,7 @@ PS3 Product Code
 0x8F // CEX - Consumer or Shop Kiosk - Brazil (BR2)
 0xA0 // ARC - Arcade
 
-PSVita Product Code
+PS Vita Product Code
 0x100 // Test - Prototype / Test unit
 0x101 // Tool - DevKit / Development Tool Kit - PDEL / DEM
 0x102 // DEX - TestKit / Testing Kit - PTEL
@@ -115,10 +113,10 @@ PSVita Product Code
 0x109 // CEX - Consumer - AU3 - Australia/New Zealand
 0x10A // CEX - Consumer - E12 - Hong Kong/Macao/Singapore/Malaysia
 0x10B // CEX - Consumer - TW1 - Taiwan
-0x10C // CEX - Consumer - RU3 - Russia - added in ????
+0x10C // CEX - Consumer - RU3 - Russia
 0x10D // CEX - Consumer - CN9 - China - added in 2015
 
-PSVita Region Code for CEX PCH-XXxx (CEX):
+PS Vita Region Code for PCH-XXxx (CEX):
 See https://playstationdev.wiki/psvitadevwiki/index.php?title=SKU_Models#Region_Code.
 
 PS4 Product Code
@@ -181,7 +179,7 @@ PS3 Product Sub Code
 0x8F // Unknown DEX Motherboard - Forces arcade HDD keyset.
 0x90 // Unknown DEX Motherboard - Forces arcade HDD keyset.
 
-PSVita Product Sub Code
+PS Vita Product Sub Code
 0x02 // Prototype CEX - never seen on any device yet except in the OS.
 0x03 // Prototype DevKit (Tool DVT1) - never seen on any device yet except in the OS. Maybe CEM-3000E3 or DEM-3000G.
 0x04 // Prototype DevKit - never seen on any device yet except in the OS.
@@ -272,7 +270,7 @@ Some people called console_id[8] chassis_check and used the formula: factory_cod
 
 /* Ps Flags
 
-On PSP, there are 8 bitflags in PSID. It is only used when PSP has Diag Factory Code. They might be a sort of QA flags. On PS3 and PS Vita, QA flags are stored in Syscon NVS.
+On PSP, there are 8 bitflags, named Ps flags, in PSID. They are only used when PSP has Diag Factory Code. They might be a sort of QA flags. For reference, on PS3 and PS Vita, QA flags are stored in Syscon NVS.
 
-There is no evidence of usage of this area on PS3, PS Vita and PS4, though it is not zeroed. This area might be used for other things on PS3, PS Vita and PS4, like for example to extend the unique ID.
+There is no evidence of usage of this Ps flags area on PS3, PS Vita and PS4, though it is not zeroed. This area might be used for other things on PS3, PS Vita and PS4, like for example to extend the serial number.
 */
