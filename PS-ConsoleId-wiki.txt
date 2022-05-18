@@ -1,6 +1,6 @@
 // Bitfield structure adapted for little-endian machines (unsure if working on big-endian machines)
 typedef struct SceConsoleId {
-	uint16_t unk;          // {0, 0}
+	uint16_t unknown;      // {0, 0}, maybe magic
 	uint16_t company_code; // {0, 1}
 	uint16_t product_code;
 	uint16_t product_sub_code;
@@ -14,7 +14,7 @@ typedef struct SceConsoleId {
 
 // Structure for systems that do not support bitfield structures. second_half has to be parsed manually with bit-shifts.
 typedef struct SceConsoleIdSimplified {
-	uint16_t unk; // {0, 0}
+	uint16_t unknown; // {0, 0}, maybe magic
 	uint16_t company_code; // {0, 1}
 	uint16_t product_code;
 	uint16_t product_sub_code;
@@ -55,7 +55,7 @@ uint8_t pscode_magic[4] = {0, 1};
 Quick determination:
 00  0X = PSP
 00  8X = PS3
-01  0X = PSV
+01  0X = PS Vita
 01  8X = PS4
 
 XX  X0 = Test
@@ -65,8 +65,8 @@ XX  X3 or higher = CEX (specific to console selling region)
 
 
 PSP Product Code
-0x00 // Test - Prototype / Test unit
-0x01 // Tool - DevKit / Development Tool  - Development Tool DEM-1000, DTP-T1000
+0x00 // Test - Prototype / Test unit - Kicho & Dengo Program default value
+0x01 // Tool - DevKit / Development Tool - Development Tool DEM-1000, DTP-T1000
 0x02 // DEX - TestKit / Testing Kit - Testing Tool DTP-H1500
 0x03 // CEX - Japan
 0x04 // CEX - North America
@@ -253,11 +253,11 @@ PS4 Product Sub Code
 
 /* Factory code
 
-It is a code representing the factory location. By extension, it also represents if the console has been or is being refurbished/diagnosed, as it is done in a special service center.
+It is a code representing the factory location. By extension, it also represents if the console has been or is being refurbished/diagnosed, as it is done in a special servicing center.
 
 Some people called console_id[8] chassis_check and used the formula: factory_code = chassis_check >> 2;
 
-0: invalid, static dummy value in PSP Kicho & Dencho Tool, static dummy value on Reference Tool PS3s when serial flash is corrupted, one CECH-21xx
+0: invalid, static dummy value in PSP Kicho & Dencho Program, static dummy value on Reference Tool PS3s when serial flash is corrupted, one CECH-21xx
 1: Japan manufacture 1 -> many PS3 DevKit and TestKit, some CECHCxx, PS Vita DEM, PDEL, some CEM (CEM-3000NE2)
 2: Japan manufacture 2 -> PSP-10XX 01g
 3: China -> PSP-20XX 02g, PSP-30XX 03g, some PSP-30XX 04g, PSP-30XX 07g and 09g, PSP-N10XX 05g, PCH PS Vita, PTEL PS Vita, all PS TV
@@ -267,13 +267,14 @@ Some people called console_id[8] chassis_check and used the formula: factory_cod
 35: Japan Diagnosis Center 1 -> detected by OS as Diag/QA on PSP
 36: Japan Diagnosis Center 2 -> detected by OS as Diag on PS Vita CEX JP and PS4 Test
 61: some Servicing Center -> ?Consumer PS Vita?, refurbished PS3, PS3 DECR-1000A
+62: some Servicing Center (having Kicho & Dencho Program) -> refurbished PSP PSP-10XX 01g
 */
 
 /* Ps Flags
 
-On PSP, there are 8 bitflags, named Ps flags, in PSID. They are only used when PSP has Diag Factory Code. They are a sort of QA flags. For reference, on PS3 and PS Vita, QA flags are stored in Syscon NVS.
+On PSP, there are 8 bitflags, named Ps flags, stored in PSID. They are only used when PSP has Diag Factory Code. They are a sort of QA flags. For reference, on PS3 and PS Vita, QA flags are stored in Syscon NVS. Kicho & Dencho Program default PSID has all Ps flags set.
 
-There is no evidence of usage of this Ps flags area on PS3, PS Vita and PS4, though it is not zeroed. This area might be used for other things on PS3, PS Vita and PS4, like for example to extend the serial number.
+There is no evidence of usage of this Ps flags area in PSID on PS3, PS Vita and PS4, though it is not zeroed. This area might be used for other things on PS3, PS Vita and PS4, like for example to extend the serial number as 262,144 serial numbers by chassis is few compared to the 87 millions of PS3 sold even with more than 20 PS3 chassis (to check with statistics).
 */
 
 /* ConsoleId Bruteforce
