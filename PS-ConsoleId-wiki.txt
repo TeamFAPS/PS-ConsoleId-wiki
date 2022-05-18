@@ -12,7 +12,7 @@ typedef struct SceConsoleId {
 	uint32_t random_stamp;
 } SceConsoleId;
 
-// Structure for systems that do not support bitfield structures. second_half has to be parsed manually with shifts.
+// Structure for systems that do not support bitfield structures. second_half has to be parsed manually with bit-shifts.
 typedef struct SceConsoleIdSimplified {
 	uint16_t unk; // {0, 0}
 	uint16_t company_code; // {0, 1}
@@ -151,7 +151,7 @@ PSP Product Sub Code
 0x05 // Motherboard TA-091 (PSP-N10XX 05g) min FW 5.70
 0x06 // Motherboard TA-093 (PSP-30XX 04g) min FW: 5.70, 6.20 (TA-093v2)
 0x07 // Motherboard TA-094 (PSP-N10XX 05g), only exists as prototype
-0x08 // Motherboard TA-095 (PSP-30XX 07g and 09g) min: FW 5.70, 6.30, 6.39 (TA-095v2 07g and 09g), ?6.60 (09g)?
+0x08 // Motherboard TA-095 (PSP-30XX 07g and 09g) min: FW 5.70, 6.30, 6.39 (TA-095v2 07g and 09g), ?6.60 (09g)?, sold notably in Hong-Kong/Singapore
 0x09 // Motherboard TA-096 / TA-097 (PSP-E10XX 11g) min FW: 6.50 (TA-096), 6.60 (TA-097)
 
 PS3 Product Sub Code
@@ -257,20 +257,28 @@ It is a code representing the factory location. By extension, it also represents
 
 Some people called console_id[8] chassis_check and used the formula: factory_code = chassis_check >> 2;
 
-0: invalid, static dummy value on Reference Tool PS3s when serial flash is corrupted
-1: Japan -> many PS3 DevKit and TestKit, PS Vita DEM, PDEL, some CEM (CEM-3000NE2)
-3: China -> most Consumer PSP, PCH PS Vita, PTEL PS Vita, all PS TV
-4: -> many Consumer PS3
+0: invalid, static dummy value in PSP Kicho & Dencho Tool, static dummy value on Reference Tool PS3s when serial flash is corrupted, one CECH-21xx
+1: Japan manufacture 1 -> many PS3 DevKit and TestKit, some CECHCxx, PS Vita DEM, PDEL, some CEM (CEM-3000NE2)
+2: Japan manufacture 2 -> PSP-10XX 01g
+3: China -> PSP-20XX 02g, PSP-30XX 03g, some PSP-30XX 04g, PSP-30XX 07g and 09g, PSP-N10XX 05g, PCH PS Vita, PTEL PS Vita, all PS TV
+4: ?Japan manufacture 3? -> some PSP-30XX 04g, PSP-E10XX 11g, many Consumer early PS3
 5: -> many Consumer PS3
 6: Manaus Industrial Pole (PIM) in Brazil since 2013 -> many PS3 Super Slim Brazil with Product Sub Code 0xF, 0x11, 0x13
 35: Japan Diagnosis Center 1 -> detected by OS as Diag/QA on PSP
 36: Japan Diagnosis Center 2 -> detected by OS as Diag on PS Vita CEX JP and PS4 Test
-61: some Servicing Center -> ?Consumer PS Vita? and refurbished PS3, PS3 DECR-1000A
+61: some Servicing Center -> ?Consumer PS Vita?, refurbished PS3, PS3 DECR-1000A
 */
 
 /* Ps Flags
 
-On PSP, there are 8 bitflags, named Ps flags, in PSID. They are only used when PSP has Diag Factory Code. They might be a sort of QA flags. For reference, on PS3 and PS Vita, QA flags are stored in Syscon NVS.
+On PSP, there are 8 bitflags, named Ps flags, in PSID. They are only used when PSP has Diag Factory Code. They are a sort of QA flags. For reference, on PS3 and PS Vita, QA flags are stored in Syscon NVS.
 
 There is no evidence of usage of this Ps flags area on PS3, PS Vita and PS4, though it is not zeroed. This area might be used for other things on PS3, PS Vita and PS4, like for example to extend the serial number.
+*/
+
+/* ConsoleId Bruteforce
+
+With all the knowledge acquired on this page, bruteforcing a ConsoleId requires never more than 8 bytes of possibilities and usually 7 bytes.
+
+The minimal size for bruteforce, if one is given enough information about the console, is near of 50 bits (6 bytes and 2 bits) which represents the serial_no and the random_stamp. However, serial_no is incremental by Product Sub Code and statistics about its range can reduce ConsoleId bruteforce to 45 bits by assuming that the higher bits of serial_no are zeroes and by bruteforcing from low serial_no to high serial_no.
 */
