@@ -158,7 +158,7 @@ PS3 Product Sub Code
 0x01 // Motherboard TMU-520 (DECR-1000(A/J), DEH-Z1010), Motherboard COK-001 (DECHSA00A/J, CECHAxx), all DEH/CBEH consoles until CECHAxx, Motherboard TMU-510 (old DEH)
 0x02 // Motherboard COK-001 - CECHBxx
 0x03 // Motherboard COK-002 - CECHCxx
-0x04 // Motherboard COK-002 or COK-002W - CECHExx, Motherboard COK-002 (GECR-1100)
+0x04 // Motherboard COK-002 or COK-002W (CECHExx), Motherboard COK-002 (GECR-1100)
 0x05 // Motherboard SEM-001 - CECHGxx
 0x06 // Motherboard DIA-001 - CECHHxx
 0x07 // Motherboard DIA-002 - CECHJxx, CECHKxx
@@ -258,16 +258,16 @@ It is a code representing the factory location. By extension, it also represents
 Some people called console_id[8] chassis_check and used the formula: factory_code = chassis_check >> 2;
 
 0: invalid, static dummy value in PSP Kicho & Dencho Program, static dummy value on Reference Tool PS3s when serial flash is corrupted, one CECH-21xx
-1: Japan manufacture 1 -> many PS3 DevKit and TestKit, some CECHCxx, PS Vita DEM, PDEL, some CEM (CEM-3000NE2)
-2: Japan manufacture 2 -> PSP-10XX 01g
-3: China -> PSP-20XX 02g, PSP-30XX 03g, some PSP-30XX 04g, PSP-30XX 07g and 09g, PSP-N10XX 05g, PCH PS Vita, PTEL PS Vita, all PS TV
-4: ?Japan manufacture 3? -> some PSP-30XX 04g, PSP-E10XX 11g, many Consumer early PS3
-5: -> many Consumer PS3
+1: Japan manufacture -> many PS3 DevKit and TestKit, some PS3 CECHCxx, PS Vita DEM, PDEL, some CEM (CEM-3000NE2)
+2: China manufacture 1 -> PSP-10XX 01g
+3: China manufacture 2 -> PSP-20XX 02g, PSP-30XX 03g, some PSP-30XX 04g, PSP-30XX 07g and 09g, PSP-N10XX 05g, PS Vita PCH, PS Vita PTEL, all PS TV, many Consumer PS4, all PS4 PRO
+4: China manufacture 3 -> some PSP-30XX 04g, PSP-E10XX 11g, many Consumer PS3 between CECHAxx and CECH-43xx, many PS4 DevKit and TestKit, many Consumer PS4
+5: ?China? -> many Consumer PS3 between CECHGxx and CECH-43xx
 6: Manaus Industrial Pole (PIM) in Brazil since 2013 -> many PS3 Super Slim Brazil with Product Sub Code 0xF, 0x11, 0x13
 35: Japan Diagnosis Center 1 -> detected by OS as Diag/QA on PSP
 36: Japan Diagnosis Center 2 -> detected by OS as Diag on PS Vita CEX JP and PS4 Test
-61: some Servicing Center -> ?Consumer PS Vita?, refurbished PS3, PS3 DECR-1000A
-62: some Servicing Center (having Kicho & Dencho Program) -> refurbished PSP PSP-10XX 01g
+61: Servicing Center 1 -> ?Consumer PS Vita?, refurbished PS3, PS3 DECR-1000A
+62: Servicing Center 2 (having Kicho & Dencho Program) -> refurbished PSP PSP-10XX 01g
 */
 
 /* Ps Flags
