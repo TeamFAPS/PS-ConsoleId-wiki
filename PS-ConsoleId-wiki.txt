@@ -1,5 +1,17 @@
 // Bitfield structure adapted for little-endian machines (unsure if working on big-endian machines)
-typedef struct SceConsoleId {
+typedef struct SceConsoleId { // To test
+	uint16_t unknown;      // {0, 0}, maybe magic
+	uint16_t company_code; // {0, 1}
+	uint16_t product_code;
+	uint16_t product_sub_code;
+	uint8_t serial_no_major: 2;
+	uint8_t factory_code: 6;
+	uint32_t serial_no_minor: 24;
+	uint32_t random_stamp;
+} SceConsoleId;
+
+// Bitfield structure adapted for little-endian machines (unsure if working on big-endian machines)
+typedef struct SceConsoleIdPspDiag {
 	uint16_t unknown;      // {0, 0}, maybe magic
 	uint16_t company_code; // {0, 1}
 	uint16_t product_code;
@@ -10,7 +22,7 @@ typedef struct SceConsoleId {
 	uint8_t ps_flags_minor: 6;
 	uint16_t serial_no_minor;
 	uint32_t random_stamp;
-} SceConsoleId;
+} SceConsoleIdPspDiag;
 
 // Structure for systems that do not support bitfield structures. second_half has to be parsed manually with bit-shifts.
 typedef struct SceConsoleIdSimplified {
@@ -272,9 +284,9 @@ Some people called console_id[8] chassis_check and used the formula: factory_cod
 
 /* Ps Flags
 
-On PSP, there are 8 bitflags, named Ps flags, stored in PSID. They are only used when PSP has Diag Factory Code. They are a sort of QA flags. For reference, on PS3 and PS Vita, QA flags are stored in Syscon NVS. Kicho & Dencho Program default PSID has all Ps flags set.
+On PSP, Ps Flags are 8 bitflags, stored in PSID in the upper bits of serial_no only when PSP has Diag Factory Code (35: Japan Diagnosis Center 1). They are a sort of QA flags. For reference, on PS3 and PS Vita, QA flags are stored in Syscon NVS. Kicho & Dencho Program default PSID has all Ps Flags set.
 
-There is no evidence of usage of this Ps flags area in PSID on PS3, PS Vita and PS4, though it is not zeroed. This area might be used for other things on PS3, PS Vita and PS4, like for example to extend the serial number as 262,144 serial numbers by chassis is few compared to the 87 millions of PS3 sold even with more than 20 PS3 chassis (to check with statistics).
+There is no evidence of usage of these Ps Flags area in PSID on PS3, PS Vita and PS4 even when the console is Diag. When PSP PSID has Diag Factory Code, there can be only 262,144 serial numbers by chassis and region, instead of 67,108,864 because 8 bits of serial_no are taken by Ps Flags.
 */
 
 /* ConsoleId Bruteforce
