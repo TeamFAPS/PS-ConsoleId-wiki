@@ -1,12 +1,15 @@
+// Warning: ConsoleId is stored in big-endian (major at left, minor at right).
+
 // Bitfield structure adapted for little-endian machines (unsure if working on big-endian machines)
-typedef struct SceConsoleId { // To test
+typedef struct SceConsoleId {
 	uint16_t unknown;      // {0, 0}, maybe magic
 	uint16_t company_code; // {0, 1}
 	uint16_t product_code;
 	uint16_t product_sub_code;
 	uint8_t serial_no_major: 2;
 	uint8_t factory_code: 6;
-	uint32_t serial_no_minor: 24;
+	uint8_t serial_no_middle;
+	uint16_t serial_no_minor;
 	uint32_t random_stamp;
 } SceConsoleId;
 
@@ -40,7 +43,7 @@ typedef struct ScePsCode {
 	uint16_t factory_code;
 } ScePsCode;
 
-// "Magics" for easier memory dumps analysis
+// "Magics" for easier memory dumps analysis, considering that Company Code is always 1
 uint8_t consoleid_magic[4] = {0, 0, 0, 1};
 uint8_t pscode_magic[4] = {0, 1};
 
@@ -278,8 +281,9 @@ Some people called console_id[8] chassis_check and used the formula: factory_cod
 6: Manaus Industrial Pole (PIM) in Brazil since 2013 -> many PS3 Super Slim Brazil with Product Sub Code 0xF, 0x11, 0x13
 35: Japan Diagnosis Center 1 -> detected by OS as Diag/QA on PSP
 36: Japan Diagnosis Center 2 -> detected by OS as Diag on PS Vita CEX JP and PS4 Test
-61: Servicing Center 1 -> ?Consumer PS Vita?, refurbished PS3, PS3 DECR-1000A
-62: Servicing Center 2 (having Kicho & Dencho Program) -> refurbished PSP PSP-10XX 01g
+61: Servicing Center 2 -> ?Consumer PS Vita?, refurbished PS3, PS3 DECR-1000A
+62: Servicing Center 1 (having Kicho & Dencho Program) -> refurbished PSP PSP-10XX 01g
+?63: Servicing Center 0? (value never seen but should exist)
 */
 
 /* Ps Flags
@@ -291,7 +295,7 @@ There is no evidence of usage of these Ps Flags area in PSID on PS3, PS Vita and
 
 /* ConsoleId Bruteforce
 
-With all the knowledge acquired on this page, bruteforcing a ConsoleId requires never more than 8 bytes of possibilities and usually 7 bytes.
+With all the knowledge acquired on this page, bruteforcing a ConsoleId requires never more than 8 bytes of tries and usually 7 bytes.
 
-The minimal size for bruteforce, if one is given enough information about the console, is near of 50 bits (6 bytes and 2 bits) which represents the serial_no and the random_stamp. However, serial_no is incremental by Product Sub Code and statistics about its range can reduce ConsoleId bruteforce to 45 bits by assuming that the higher bits of serial_no are zeroes and by bruteforcing from low serial_no to high serial_no.
+The worst-case size for bruteforce, if one is given enough information about the console (chassis and region), is near of 58 bits (7 bytes and 2 bits) which represents the serial_no and the random_stamp. However, serial_no is incremental and clustered by (Product Code, Product Sub Code) couple (?by Factory Code too?). Moreover, statistics about its maximum value, estimated by the number of consoles sold, can reduce serial_no to 22 bits (about 4 millions of CECH-3001/CECH-3015). So ConsoleId most-optimized worst-case bruteforce is 54 bits (6 bytes and 6 bits) by assuming that the 4 highest bits of serial_no are zeroes and by bruteforcing from low serial_no to high serial_no.
 */
