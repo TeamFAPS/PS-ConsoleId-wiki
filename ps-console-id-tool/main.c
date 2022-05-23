@@ -58,10 +58,10 @@ int main (int argc, char *argv[]) {
 		/////////////////////////////////////////////////////////////////////
 		printf("Structure (displayed in big endian):\n");
 		SceConsoleId *cid = (SceConsoleId *)&cid_hex;
-		printf("Unknown: 0x%02X\n", be16((u8 *)&(cid->unknown)));
+		printf("Unknown: 0x%04X\n", be16((u8 *)&(cid->unknown)));
 		printf("Company Code: %d\n", be16((u8 *)&(cid->company_code)));
-		printf("Product Code: 0x%02X\n", be16((u8 *)&(cid->product_code)));
-		printf("Product Sub Code: 0x%02X\n", be16((u8 *)&(cid->product_sub_code)));
+		printf("Product Code: 0x%04X\n", be16((u8 *)&(cid->product_code)));
+		printf("Product Sub Code: 0x%04X\n", be16((u8 *)&(cid->product_sub_code)));
 		printf("Factory Code: %d\n", cid->factory_code);
 		uint32_t serial_no = (cid->serial_no_major << 24) | (cid->serial_no_middle << 16) | be16((u8 *)&(cid->serial_no_minor));
 		printf("Serial Number: %d\n", serial_no);
