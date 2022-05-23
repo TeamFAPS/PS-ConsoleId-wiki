@@ -1,0 +1,2 @@
+ps-console-id-tool.exe 000000010084000C133DA248E195FC34
+cmd
