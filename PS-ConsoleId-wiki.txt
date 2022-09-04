@@ -80,7 +80,7 @@ XX  X3 or higher = CEX (specific to console selling region)
 
 
 PSP Product Code
-0x00 // Test - Prototype / Test unit - Kicho & Dengo Program default value
+0x00 // Test - Prototype / Test unit - Kicho & Dencho Program default value
 0x01 // Tool - DevKit / Development Tool - Development Tool DEM-1000, DTP-T1000
 0x02 // DEX - TestKit / Testing Kit - Testing Tool DTP-H1500
 0x03 // CEX - Japan
