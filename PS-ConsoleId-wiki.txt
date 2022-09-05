@@ -206,7 +206,7 @@ PS Vita Product Sub Code
 0x0C // Prototype - never seen on any device yet except in the OS. Maybe M chassis.
 0x0D // Prototype - never seen. Maybe N chassis.
 0x0E // Prototype - never seen. Maybe O chassis.
-0x0F // Prototype CEX - Motherboard IRS-002 (0-845-846-U10) (CEM-3000NP1). Maybe DEM-3000P.
+0x0F // Prototype DevKit - Motherboard IRT-002 (Prototype DevKit DEM-3000JEC) - Prototype CEX - Motherboard IRS-002 (0-845-846-U10) (CEM-3000NP1). Maybe also DEM-3000P.
 0x10 // FAT - Motherboard IRS-002 (PCH-10XX / PCH-11XX / TestKit PTEL-10XX) or Motherboard IRT-002 (DevKit PDEL-10XX) - factory FW 1.00 or 1.03
 0x11 // FAT - Motherboard IRS-1001 (PCH-11XX) factory FW 1.81, min FW 1.80, 2012-09
 0x12 // FAT - Motherboard IRS-1001 (PCH-10XX) factory FW 1.81, min FW 1.80, 2012-09
