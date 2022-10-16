@@ -260,7 +260,7 @@ PS4 Product Sub Code
 0x13 // Slim chassis D - Motherboard SAD-001 / SAD-002 / SAD-003 - Consumer CUH-20xx - TestKit DUH-T20xx
 0x14 // Slim chassis E - Motherboard SAE-001 / SAE-002 / SAE-003 / SAE-004 - Consumer CUH-21xx
 ?0x15? // Slim chassis F - Motherboard SAF-003 / SAF-004 / SAF-006 - Consumer CUH-22xx
-0x210 // Pro Devkit chassis - Motherboard HAC-001 - Pro DevKit DUH-D7000JA (1-981-411-11) with Communication Processor BDT-010 (1-981-412-11)
+0x210 // Pro Devkit chassis - Motherboard HAC-001 - Pro DevKit DUH-D7000JA (1-981-411-11) / T-HAK-NFS-11 (0-361-897-01) with Communication Processor BDT-010 (1-981-412-11)
 0x211 // Pro chassis A - Motherboard NVA-001 - Consumer CUH-70xx (seen on units shipped with FW 3.70-4.70) - Pro TestKit DUH-T70xx
 0x212 // Pro chassis B - Motherboard NVB-003 / NVB-004 - Consumer CUH-71xx
 0x213 // Pro chassis C - Motherboard NVG-001 / NVG-002 - NVG-003 - Consumer CUH-72xx
