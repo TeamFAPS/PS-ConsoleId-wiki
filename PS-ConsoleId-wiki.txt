@@ -206,14 +206,14 @@ PS Vita Product Sub Code
 0x0C // Prototype - never seen on any device yet except in the OS. Maybe M chassis.
 0x0D // Prototype - never seen. Maybe N chassis.
 0x0E // Prototype - never seen. Maybe O chassis.
-0x0F // Prototype DevKit - Motherboard IRT-002 (Prototype DevKit DEM-3000JEC) - Prototype CEX - Motherboard IRS-002 (0-845-846-U10) (CEM-3000NP1). Maybe also DEM-3000P.
-0x10 // FAT - Motherboard IRS-002 (PCH-10XX / PCH-11XX / TestKit PTEL-10XX) or Motherboard IRT-002 (DevKit PDEL-10XX) - factory FW 1.00 or 1.03
-0x11 // FAT - Motherboard IRS-1001 (PCH-11XX) factory FW 1.81, min FW 1.80, 2012-09
-0x12 // FAT - Motherboard IRS-1001 (PCH-10XX) factory FW 1.81, min FW 1.80, 2012-09
-0x14 // SLIM - Motherboard USS-1001 (PCH-20XX / TestKit PTEL-20XX) - factory FW 2.50, 2013-06
-0x18 // SLIM - Motherboard USS-1002 (PCH-20XX / TestKit PTEL-20XX) - factory FW 3.50 or 3.65, 2015-05
-0x201 // PS TV - Motherboard DOL-1001 (VTE-10XX) - factory FW 2.60 (?or 2.50?) white units 2013-10, factory FW 3.20 black units year 2014
-0x202 // PS TV - Motherboard DOL-1002 (VTE-10XX) - factory FW 3.30 black units year 2015
+0x0F // Prototype CEX - Motherboard IRS-002 (0-845-846-U10) (CEM-3000NP1) - Prototype DevKit - Motherboard IRT-002 (0-851-973-10) (Prototype DevKit DEM-3000JEC) - Prototype TestKit - Motherboard IRS-002 (1-883-949-11) (TEFV-1000PV1). Maybe also DEM-3000P.
+0x10 // FAT - Motherboard IRS-002 (1-883-949-11) (PCH-10XX / PCH-11XX / TestKit PTEL-10XX) or Motherboard IRT-002 (1-884-714-11) (DevKit PDEL-10XX) - factory FW 1.00 or 1.03
+0x11 // FAT - Motherboard IRS-1001 (?1-886-596-11?) (PCH-11XX) factory FW 1.81, min FW 1.80, 2012-09
+0x12 // FAT - Motherboard IRS-1001 (1-886-596-11) (PCH-10XX) factory FW 1.81, min FW 1.80, 2012-09
+0x14 // SLIM - Motherboard USS-1001 (1-887-458-11) (PCH-20XX / TestKit PTEL-20XX) - factory FW 2.50, 2013-06
+0x18 // SLIM - Motherboard USS-1002 (1-894-783-11) (PCH-20XX / TestKit PTEL-20XX) - factory FW 3.50 or 3.65, 2015-05
+0x201 // PS TV - Motherboard DOL-1001 (1-888-648-21) (VTE-10XX) - factory FW 2.60 (?or 2.50?) white units 2013-10, factory FW 3.20 black units year 2014
+0x202 // PS TV - Motherboard DOL-1002 (1-???-???-??) (VTE-10XX) - factory FW 3.30 black units year 2015
 0x408 // PS TV DevKit (Tool) - never seen on any device yet except in the OS.
 0x602 // PS TV Prototype TestKit (Dolce DVT WLAN DEX) - Motherboard DOL-1001 (0-DOL-001-U3A) (CEM-3000P01 / THV-1000 D1) - factory FW 2.50, white color
 
