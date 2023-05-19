@@ -228,7 +228,7 @@ PS4 Product Sub Code
 // -BEO
 // -BAO
 // -BEOT
-// Motherboard SYRUP-11?
+?0x01? // Motherboard SYRUP-11 - ?SRP-11? (0-000-000-11) 2012 week ?24? -  Prototype DevKit
 // Motherboard SYRUP-12?
 // Motherboard CAVERN-G01?
 // Motherboard CAVERN-T01?
