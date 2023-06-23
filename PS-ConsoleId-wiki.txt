@@ -202,7 +202,7 @@ PS Vita Product Sub Code
 0x07 // Prototype CEX - never seen on any device yet except in the OS.
 0x09 // Prototype DevKit - Motherboard IRT-002 (Prototype DevKit New EVT1 DEM-3000K). Maybe also DEM-3000JEC.
 0x0A // Prototype DEX - CEM-3000NE2 with min FW 0.990.
-0x0B // Prototype - Motherboard IRT-002 (0-851-973-06) (Prototype DevKit NEW DVT1 DEM-3000L) - Prototype ?DEX? - Motherboard IRS-002 (CEM-3000ND1) with min FW ?0.996?
+0x0B // Prototype - Motherboard IRT-002 (0-851-973-06) (Prototype DevKit NEW DVT1 DEM-3000L) - Prototype DEX - Motherboard IRS-002 (CEM-3000ND1) with min FW 0.996
 0x0C // Prototype - never seen on any device yet except in the OS. Maybe M chassis.
 0x0D // Prototype - never seen. Maybe N chassis.
 0x0E // Prototype - never seen. Maybe O chassis.
