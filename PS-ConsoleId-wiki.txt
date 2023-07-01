@@ -200,13 +200,13 @@ PS Vita Product Sub Code
 0x04 // Prototype DevKit - never seen on any device yet except in the OS. Special DevKit forever activated.
 0x05 // Prototype DevKit (Tool DVT2) - Motherboard IRT-001 (0-835-167-04) (Prototype DevKit DVT2 internal System Debugger DEM-3000H)
 0x07 // Prototype CEX - never seen on any device yet except in the OS.
-0x09 // Prototype DevKit - Motherboard IRT-002 (Prototype DevKit New EVT1 DEM-3000K). Maybe also DEM-3000JEC.
+0x09 // Prototype DevKit - Motherboard IRT-002 (Tool NEW EVT1 DEM-3000K). Maybe also DEM-3000JEC.
 0x0A // Prototype DEX - CEM-3000NE2 with min FW 0.990.
-0x0B // Prototype - Motherboard IRT-002 (0-851-973-06) (Prototype DevKit NEW DVT1 DEM-3000L) - Prototype DEX - Motherboard IRS-002 (CEM-3000ND1) with min FW 0.996
-0x0C // Prototype - never seen on any device yet except in the OS. Maybe M chassis.
-0x0D // Prototype - never seen. Maybe N chassis.
-0x0E // Prototype - never seen. Maybe O chassis.
-0x0F // Prototype CEX - Motherboard IRS-002 (0-845-846-U10) (CEM-3000NP1) - Prototype DevKit - Motherboard IRT-002 (0-851-973-10) (Prototype DevKit DEM-3000JEC) - Prototype TestKit - Motherboard IRS-002 (1-883-949-11) (TEFV-1000PV1). Maybe also DEM-3000P.
+0x0B // Prototype DevKit - Motherboard IRT-002 (0-851-973-06) (Tool NEW DVT1 DEM-3000L) - Prototype DEX - Motherboard IRS-002 (CEM-3000ND1) with min FW 0.996
+0x0C // Prototype - never seen on any device yet except in the OS.
+0x0D // Prototype DevKit - Motherboard IRT-002 (0-851-973-07) (Tool NEW DVT2 DEM-3000P) - factory FW 0.996
+0x0E // Prototype - never seen.
+0x0F // Prototype CEX - Motherboard IRS-002 (0-845-846-U10) (CEM-3000NP1) - Prototype DevKit - Motherboard IRT-002 (0-851-973-10) (Prototype DevKit DEM-3000JEC) - Prototype TestKit - Motherboard IRS-002 (1-883-949-11) (TEFV-1000PV1).
 0x10 // FAT - Motherboard IRS-002 (1-883-949-11) (PCH-10XX / PCH-11XX / TestKit PTEL-10XX) or Motherboard IRT-002 (1-884-714-11) (DevKit PDEL-10XX) - factory FW 1.00 or 1.03
 0x11 // FAT - Motherboard IRS-1001 (?1-886-596-11?) (PCH-11XX) factory FW 1.81, min FW 1.80, 2012-09
 0x12 // FAT - Motherboard IRS-1001 (1-886-596-11) (PCH-10XX) factory FW 1.81, min FW 1.80, 2012-09
